@@ -1,37 +1,26 @@
-<!doctype html>
-<html lang="zh-Hant">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#F6F4F0">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="首爾濟州">
-<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
-<link rel="apple-touch-icon" href="data:image/png;base64,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">
-<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
-<title>首爾濟州 9 日遊</title>
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0B7A83"><style>:root{padding-top:env(safe-area-inset-top,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style><title>南島冬季手冊 2027</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
-/* Layout: phone-first single column, sticky day strip, fixed bottom tab bar; Jeju palette: tangerine accent on basalt ink, sea-teal secondary */
+/* Layout: phone-first single column, sticky day strip on top, fixed tab bar at bottom; glacier-water palette with alpine amber for warnings */
 :root{
-  --bg:#F6F4F0; --card:#FFFFFF; --ink:#26221F; --muted:#6E655E; --line:#E6DFD6;
-  --accent:#E06A12; --accent-soft:#FCE7D4; --sea:#0F7C86; --sea-soft:#D7EEEF;
-  --amber:#9A5B00; --amber-soft:#FBEFD2; --red:#B3362B; --red-soft:#F8DEDA; --green:#2D7A45;
+  --bg:#EEF3F3; --card:#FFFFFF; --ink:#14262C; --muted:#5B6E73; --line:#D5E0E1;
+  --accent:#0B7A83; --accent-soft:#D6ECEC; --amber:#A8650A; --amber-soft:#FBEBD2;
+  --red:#B3362B; --red-soft:#F8DEDA; --green:#2D7A45;
   --f-display:"LXGW WenKai TC","Noto Serif TC",serif;
   --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
   --tabh:62px;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#1A1715; --card:#24201D; --ink:#EEE8E2; --muted:#AA9F95; --line:#38312C;
-  --accent:#FF9447; --accent-soft:#45291A; --sea:#5CC7CF; --sea-soft:#173538;
-  --amber:#E8B04A; --amber-soft:#3A2D16; --red:#F08A7E; --red-soft:#3D1F1C; --green:#6CC48A; color-scheme:dark}}
+  --bg:#0E1A1D; --card:#16262A; --ink:#E4EEEF; --muted:#94A9AD; --line:#26393E;
+  --accent:#4FC2C9; --accent-soft:#16383C; --amber:#E8A84A; --amber-soft:#3A2C16;
+  --red:#F08A7E; --red-soft:#3D1F1C; --green:#6CC48A; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#1A1715; --card:#24201D; --ink:#EEE8E2; --muted:#AA9F95; --line:#38312C;
-  --accent:#FF9447; --accent-soft:#45291A; --sea:#5CC7CF; --sea-soft:#173538;
-  --amber:#E8B04A; --amber-soft:#3A2D16; --red:#F08A7E; --red-soft:#3D1F1C; --green:#6CC48A; color-scheme:dark}
+  --bg:#0E1A1D; --card:#16262A; --ink:#E4EEEF; --muted:#94A9AD; --line:#26393E;
+  --accent:#4FC2C9; --accent-soft:#16383C; --amber:#E8A84A; --amber-soft:#3A2C16;
+  --red:#F08A7E; --red-soft:#3D1F1C; --green:#6CC48A; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html,body{background:var(--bg)}
@@ -43,7 +32,7 @@ main{max-width:640px;margin:0 auto}
 h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;font-weight:700;line-height:1.25}
 h2{font-size:1.45rem}
 h3{font-size:1.05rem}
-a{color:var(--sea)}
+a{color:var(--accent)}
 button,input,select{font:inherit;color:inherit}
 button{cursor:pointer}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -51,11 +40,12 @@ button{cursor:pointer}
 .muted{color:var(--muted)}
 .label{font-size:.72rem;letter-spacing:.08em;color:var(--muted);font-weight:700}
 
+/* masthead */
 .mast{padding-block:18px 8px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
 .mast h1{font-size:1.6rem}
-.mast h1 i{font-style:normal;color:var(--accent)}
 .mast .sub{font-size:.82rem;color:var(--muted)}
 
+/* day strip */
 .strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);
   margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:8px max(16px,env(safe-area-inset-left,0px));
   display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
@@ -63,54 +53,47 @@ button{cursor:pointer}
 .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:4px 9px;text-align:center;min-width:52px}
 .chip b{display:block;font-family:var(--f-mono);font-size:.9rem}
 .chip span{font-size:.7rem;color:var(--muted)}
-.chip[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
-.chip[aria-current="true"] span{color:inherit;opacity:.9}
-.chip.today{box-shadow:inset 0 -3px 0 var(--sea)}
+.chip[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:var(--card)}
+.chip[aria-current="true"] span{color:inherit;opacity:.85}
+.chip.today{box-shadow:inset 0 -3px 0 var(--amber)}
 
+/* day */
 .dayhead{padding-block:18px 10px;display:grid;gap:4px}
 .dayhead .date{font-family:var(--f-mono);color:var(--accent);font-size:.9rem}
 .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-.pill{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;padding:2px 9px;border-radius:999px;background:var(--sea-soft);color:var(--ink)}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
 .pill.warn{background:var(--amber-soft)}
 .pill.red{background:var(--red-soft)}
-.pill.must{background:var(--accent-soft)}
 .sec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px}
 .sec>h3{margin-bottom:8px}
 .timeline{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .timeline li{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:baseline}
 .timeline .t{font-family:var(--f-mono);font-size:.85rem;color:var(--accent)}
 .timeline li>div{min-width:0}
-.must-mark{color:var(--accent);font-weight:700}
-ul.plain{margin:0;padding-left:1.15em;display:grid;gap:4px}
-.callout{border-radius:12px;padding:12px 14px;margin-top:12px;background:var(--amber-soft)}
-.callout.red{background:var(--red-soft)}
-.callout.info{background:var(--sea-soft)}
-.callout h3{font-size:.98rem;margin-bottom:4px}
-.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.9rem}
-.kv dt{color:var(--muted)}
-.kv dd{margin:0;min-width:0}
 .tablewrap{overflow-x:auto;margin-inline:-4px}
 table{border-collapse:collapse;width:100%;font-size:.86rem}
 th,td{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-weight:700;color:var(--muted);font-size:.75rem;white-space:nowrap}
+td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+ul.plain{margin:0;padding-left:1.15em;display:grid;gap:4px}
+.callout{border-radius:12px;padding:12px 14px;margin-top:12px;background:var(--amber-soft)}
+.callout.red{background:var(--red-soft)}
+.callout.info{background:var(--accent-soft)}
+.callout h3{font-size:.98rem;margin-bottom:4px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.9rem}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;min-width:0}
 
+/* today */
 .count{padding-block:22px 6px}
 .count .big{font-family:var(--f-display);font-size:3.2rem;line-height:1;color:var(--accent)}
-.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--accent);color:#fff;font-weight:700}
+.deadline{display:grid;grid-template-columns:64px 1fr;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.deadline:last-child{border-bottom:0}
+.deadline .d{font-family:var(--f-mono);color:var(--amber);font-size:.88rem}
+.deadline.past .d{color:var(--muted);text-decoration:line-through}
+.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--accent);color:var(--card);font-weight:700}
 .btn.ghost{background:var(--accent-soft);color:var(--ink)}
 .btn.small{padding:6px 10px;font-size:.85rem}
-
-/* places */
-.place{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}
-.place:last-child{border-bottom:0}
-.place>div{min-width:0}
-.place .ko{font-size:.8rem;color:var(--muted)}
-.place .note{font-size:.84rem;margin-top:2px}
-.place .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
-.maplink{font-size:.8rem;white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 8px;background:var(--bg)}
-.filters{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:4px}
-.filters button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 11px;font-size:.85rem}
-.filters button[aria-pressed="true"]{background:var(--sea);border-color:var(--sea);color:#fff}
 
 /* ledger */
 .totals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
@@ -125,7 +108,10 @@ input,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:
 .amt{display:grid;grid-template-columns:1fr 84px;gap:6px}
 .cats{display:flex;flex-wrap:wrap;gap:6px}
 .cats button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:4px 11px;font-size:.85rem}
-.cats button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.maplink{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:4px 11px;font-size:.85rem;text-decoration:none;color:var(--ink)}
+.maplink::after{content:" ↗";color:var(--accent)}
+a.btn{text-decoration:none;display:inline-block}
+.cats button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--card)}
 .bar{height:8px;border-radius:4px;background:var(--accent-soft);overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent)}
 .catrow{display:grid;grid-template-columns:72px 1fr 92px;gap:10px;align-items:center;font-size:.88rem;padding:3px 0}
@@ -138,12 +124,14 @@ input,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:
 .daygroup h4{margin:14px 0 2px;font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between}
 .status{font-size:.78rem;color:var(--muted);margin-top:8px}
 
+/* checklist */
 .check{display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:start;padding:7px 0;border-bottom:1px solid var(--line)}
 .check:last-child{border-bottom:0}
 .check input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
 .check.done span{color:var(--muted);text-decoration:line-through}
 .progress{font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
 
+/* tab bar */
 nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);
   display:grid;grid-template-columns:repeat(5,1fr);
   padding:0 max(8px,env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) max(8px,env(safe-area-inset-left,0px))}
@@ -153,14 +141,13 @@ nav.tabs button[aria-selected="true"]{color:var(--accent);font-weight:700}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--tabh) + 14px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:10px;font-size:.88rem;z-index:30}
 @media (prefers-reduced-motion:no-preference){.view{animation:fade .18s ease-out}}
 @keyframes fade{from{opacity:.4}to{opacity:1}}
-</style>
-</head>
-<body>
+</style></head><body>
+
 <main>
   <header class="mast">
     <div>
-      <h1>首爾＋濟州 <i>9</i> 日遊</h1>
-      <div class="sub" id="sub">2027／1／22 – 1／30 · 高雄 → 首爾 → 龍平 → 濟州 → 高雄</div>
+      <h1>南島冬季手冊</h1>
+      <div class="sub">2027／7／3 – 7／18 · 高雄 ⇄ 基督城 · 13 晚自駕</div>
     </div>
   </header>
   <div class="strip" id="strip" hidden></div>
@@ -168,106 +155,163 @@ nav.tabs button[aria-selected="true"]{color:var(--accent);font-weight:700}
 </main>
 
 <nav class="tabs" role="tablist" id="tabs">
-  <button role="tab" data-tab="today"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 6c0-2 1.5-3 3-3M12 6c-1-1.5-3-2-4.5-1.5"/></svg>今日</button>
-  <button role="tab" data-tab="days"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>行程</button>
-  <button role="tab" data-tab="places"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>地點</button>
+  <button role="tab" data-tab="today"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>今日</button>
+  <button role="tab" data-tab="days"><svg viewBox="0 0 24 24"><path d="M3 20l6-12 4 7 3-4 5 9z"/></svg>行程</button>
+  <button role="tab" data-tab="notes"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>須知</button>
   <button role="tab" data-tab="money"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg>記帳</button>
-  <button role="tab" data-tab="prep"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg>準備</button>
+  <button role="tab" data-tab="list"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg>清單</button>
 </nav>
 
 <script>
-/* ---------- trip data: Jeju plan from 濟州島八天七夜行程規劃.odt (latest version), Seoul/Yongpyong and bookings from Wan's confirmations ---------- */
+/* ---------- trip data (from the Winter Trip 2027 handbook, flights from the flight plan) ---------- */
 const DAYS = [
- {d:"2027-01-22",w:"五",title:"出發：高雄 → 首爾金浦",stay:"Baro Ato 弘大 2 號店",area:"首爾",
-  items:[["15:55","台灣虎航 IT662 高雄 → 首爾金浦（19:45 抵達）"],["20:00","入境、領行李，搭機場鐵路或地鐵到弘大（約 30 分鐘），或搭計程車"],["21:00","Baro Ato 弘大 2 號店 Check-in（入住 15:00 起，晚到沒關係）"]],
-  warn:["Baro Ato 現場付 ₩240,000（兩晚，現金或刷卡）","入住前 7 天內取消或沒入住會收全額，1/15 起就不能免費取消","IT662 託運行李每人 20 公斤","飯店確認單上的航班寫成 IT622，實際是 IT662，晚上 9 點左右才到，可先用 LINE 或 Kakao（ID：baroato）告訴飯店"]},
- {d:"2027-01-23",w:"六",title:"首爾市區購物",stay:"Baro Ato 弘大 2 號店",area:"首爾",
-  items:[["全天","首爾市區購物（要去哪幾區還沒排）"]],
-  warn:["第二組朋友這天到，之後的行程大家一起"]},
- {d:"2027-01-24",w:"日",title:"首爾 → 龍平滑雪場",stay:"龍飯店（Dragon Valley Hotel）",area:"龍平",
-  items:[["11:00","Baro Ato 退房"],["中午","搭龍平接駁巴士到龍平（班次、上車地點待確認）"],["下午","入住龍飯店，滑雪或玩雪"]],
-  warn:["接駁巴士要先預約，挑離弘大最近的上車站","雪具、雪衣租借還沒訂"]},
- {d:"2027-01-25",w:"一",title:"龍平 → 金浦 → 飛濟州",stay:"Ventimo Hotel & Residence Jeju",area:"龍平→濟州",
-  items:[["上午","龍平滑雪或玩雪"],["中午","退房，搭龍平接駁巴士回首爾，再轉往金浦機場"],["18:30","金浦機場國內線 D 航廈報到"],["20:20","大韓航空 KE1227 金浦 → 濟州（21:35 抵達）"],["22:00","搭計程車到 Ventimo 入住"]],
-  warn:["接駁巴士回首爾後還要轉車到金浦，挑早一點的班次，避免趕不上 20:20 的班機","KE1227 託運行李每人 20 公斤，要帶護照正本（截圖或影本不能登機）"]},
- {d:"2027-01-26",draft:true,w:"二",title:"1100 高地玩雪，山茶花之丘",stay:"待訂（原本排西歸浦）",area:"濟州・漢拏山",
-  items:[["上午","Ventimo 退房、取租車，開往 1100 高地：白鹿雕像拍照、木棧道 10–15 分鐘、路邊玩雪"],["午餐","山房山炭火帶魚（整條長帶魚料理）"],["下午","山茶花之丘 Camellia Hill：冬天山茶花最美",true],["傍晚","Osulloc 綠茶博物館：綠茶霜淇淋，買抹醬和茶包禮盒"]],
-  warn:["出發前看漢拏山國立公園官網的 1100 高地 CCTV，確認有雪、道路沒管制","路面會結冰，小孩穿防滑鞋，大人可買簡易冰爪","雪球夾可在大創或超市買；帶保溫瓶裝熱水"],
-  plan:["沒雪或封路：上午改去 Osulloc，下午山茶花之丘慢慢逛"]},
- {d:"2027-01-27",draft:true,w:"三",title:"正房瀑布，市場與超市大採購",stay:"城山一帶（待訂，方便隔天搭船）",area:"濟州・西歸浦",
-  items:[["上午","正房瀑布：直接落入大海的瀑布",true],["午餐","可選：大浪味海鮮盆或海鮮拉麵"],["下午","西歸浦每日偶來市場：橘子糖、乾貨、小吃"],["傍晚","西歸浦 E-Mart：泡麵、零食、海苔，大包裝一次買齊"],["晚上","開往城山入住，順便把伴手禮裝箱"]]},
- {d:"2027-01-28",draft:true,w:"四",title:"牛島一日遊",stay:"待訂（城山 或 濟州市區）",area:"濟州・牛島",
-  items:[["早上","城山港搭船到牛島（約 15 分鐘）",true],["島上","租三輪或微型電動車環島：西濱白沙、後海石壁、牛島燈塔"],["午餐","Haha Hoho 花生漢堡 或 漢拏山炒飯"],["點心","牛島花生冰淇淋"],["傍晚","回本島，城山日出峰周邊看海"]],
-  warn:["船班大約傍晚 5 點多就停駛，留意回程時間","風浪大會停航，前一晚和當天早上確認","一般租車不能開上牛島，車停城山港","搭船要填乘船申告書，帶護照"],
-  plan:["停航：改去城山日出峰、涉地可支，牛島看隔天能不能補"]},
- {d:"2027-01-29",draft:true,w:"五",title:"史努比花園、水族館、告別烤肉",stay:"Ventimo Hotel & Residence Jeju",area:"濟州・東部",
-  items:[["上午","史努比花園：買濟州限定周邊，結帳多留半小時",true],["午餐","園區內 Snoopy Cafe"],["下午","Aqua Planet 水族館：大水槽、海獅表演",true],["傍晚","開回濟州市區，入住 Ventimo"],["晚餐","告別烤肉：熟成到 或 88 烤肉"],["晚上","體力夠就去東門市場補貨，回飯店整理行李"]],
-  warn:["熟成到很熱門：用 CatchTable 候位，或早點去拿號碼牌","烤肉味重，衣服用塑膠袋封好再裝箱","回程虎航 Wan 有 35 公斤、Nien-Tzu 20 公斤，伴手禮照這個分配"]},
- {d:"2027-01-30",w:"六",title:"濟州 → 高雄",stay:"到家",area:"濟州",
-  items:[["08:00","Ventimo 退房、還車（加滿油）"],["09:00","到濟州機場報到，辦理退稅、免稅店取貨"],["11:15","台灣虎航 IT675 濟州 → 高雄（12:35 抵達）"]],
-  warn:["這天不排逛街，伴手禮前幾天就要買齊"]}
+ {d:"2027-07-03",w:"六",title:"出發：高雄 → 香港 → 奧克蘭",stay:"機上過夜",drive:"—",
+  items:[["13:40","CX423 高雄 → 香港（15:25 抵達）"],["15:25","香港轉機，等候 5 小時 45 分"],["21:10","CX113 香港 → 奧克蘭（隔天 11:50 抵達）"]],
+  warn:["託運行李能否直掛基督城，以旅行社書面回覆為準","去程只在機場禁區轉機一般不需香港入境登記，未找到官方文件，請向國泰確認","下飛機前檢查包包和外套口袋，機上發的水果麵包要丟掉或申報"]},
+ {d:"2027-07-04",w:"日",title:"抵達基督城",stay:"Quest on Kilmore（停車每晚 NZ$25）",drive:"0.3 h",
+  items:[["11:50","抵達奧克蘭，入境＋生物安檢"],["","領行李 → 出關後到 Transfer Drop 重新託運 → 沿地面綠線步行 10–15 分到國內航廈（下雨可搭免費接駁）"],["15:00","NZ551 奧克蘭 → 基督城（16:25 抵達）"],["18:15","機場取車，加租雪鍊，先在停車場熟悉車子"],["19:00","市區超市補給，入住"]],
+  roads:[["機場 → 市區","Memorial Ave","12","20 分"]],
+  warn:["第一次靠左開、又是晚上。進圓環讓右方來車，轉彎後記得靠左","場外租車公司（Ezi、Apex 等）較早關門，先把航班號給租車公司","取車繞車錄影，確認雪鍊尺寸、胎紋，請櫃台示範裝鍊"]},
+ {d:"2027-07-05",w:"一",title:"基督城 → Fairlie → 蒂卡波",stay:"Haka House 或 Lake Tekapo Village Motel（二選一）",drive:"3.1 h",
+  items:[["9:00","出發（Burkes Pass 早上易結冰，不要更早）"],["10:45","Geraldine 喝咖啡休息（不累就直接開到 Fairlie）"],["11:30","Fairlie Bakehouse 吃派，多買幾個當明天午餐"],["13:30","抵達蒂卡波，好牧羊人教堂"],["15:00","Tekapo Springs 溫泉"],["晚上","Dark Sky Project 觀星（已預約）"]],
+  roads:[["基督城 → Geraldine","SH1 南下，Rangitata 轉 SH79","140","1 時 50 分"],["Geraldine → Fairlie","SH79","45","35 分"],["Fairlie → 蒂卡波","SH8（Burkes Pass）","43","40 分"]],
+  fuel:"Geraldine 或 Fairlie",stops:"Rakaia 鮭魚雕像、Geraldine、Fairlie、蒂卡波湖邊",
+  warn:["Rakaia 大橋很長、側風強；SH79 有多座單線橋","Burkes Pass（約 700 m）早上容易結冰","晚上看天氣，決定冰川健行要不要改到 7/7"],
+  photo:[["好牧羊人教堂","教堂加銀河","RF 16＋腳架，教堂內部禁拍"]],food:["Fairlie Bakehouse：鮭魚培根派、豬五花蘋果派"]},
+ {d:"2027-07-06",w:"二",title:"冰川健行 → Tasman → 特威澤爾",stay:"特威澤爾度假屋",drive:"2.6 h",
+  items:[["8:45","從蒂卡波出發，直接開到 Mount Cook 機場（早上不停觀景台）"],["9:45","冰川直升機健行（到 12:45）"],["13:00","Hermitage 飯店午餐"],["14:00","Tasman Glacier View＋Tasman Lake Track，拍冰河湖和浮冰（到 16:00）"],["16:30","回程停 Peter's Lookout，17:00 前到特威澤爾"]],
+  roads:[["蒂卡波 → Pukaki 岔路","SH8","47","35 分"],["岔路 → Mount Cook 機場","SH80","50","40 分"],["機場 → 庫克山村","SH80","8","10 分"],["村 → Tasman 停車場","Tasman Valley Rd","8","15 分"],["Tasman → 特威澤爾","SH80 → SH8","70","55 分"]],
+  fuel:"庫克山一帶加油不便，蒂卡波出發前加滿",stops:"Peter's Lookout（SH80 左側）、Pukaki 湖遊客中心",
+  warn:["SH80 常有遊客突然停車拍照，越接近庫克山村路越窄","Tasman Valley Rd 是否全段柏油資料不一，出發前在地圖或遊客中心確認","冬天 Tasman 湖面可能結冰，不要走上冰面"],
+  plan:["停飛：下午照樣走 Tasman，7/7 早上 9:45 改去冰川健行","7/7 也停飛：7/11 從皇后鎮出發補做（費用較高）"],
+  photo:[["冰川健行","藍冰、夫妻合照","X-T50＋XF 18-55、Ace Pro 2；雪地曝光 +1～+1.7 EV"],["Tasman Glacier View","冰河湖、浮冰","RF 16 / 28-70 / 70-200"],["Peter's Lookout","庫克山、牛奶湖加公路","RF 70-200，別站馬路中間"]],
+  food:["Mt Cook Alpine Salmon：冰河水帝王鮭生魚片"]},
+ {d:"2027-07-07",w:"三",title:"Hooker Valley → 瓦納卡",stay:"ASURE Brookvale（2 晚）",drive:"3.7 h",
+  items:[["7:30","查 NZTA 的 Lindis Pass 路況"],["8:45","退房出發，9:45 到 White Horse Hill 停車場"],["9:45","Hooker Valley 走到第二座吊橋折返（到 11:45）"],["12:00","出發，途中停 Pukaki 湖遊客中心拍照、買鮭魚"],["14:30","過 Lindis Pass，16:00 前抵達瓦納卡"],["傍晚","That Wanaka Tree 夕陽"]],
+  roads:[["特威澤爾 → White Horse Hill","SH8 → SH80","68","55 分"],["White Horse Hill → 特威澤爾","SH80 → SH8","68","55 分"],["特威澤爾 → Omarama","SH8","30","25 分"],["Omarama → Tarras","SH8（Lindis Pass）","85","1 時"],["Tarras → 瓦納卡","SH8A → SH6","35","30 分"]],
+  fuel:"特威澤爾或 Omarama 加滿，Lindis Pass 沒有加油站",stops:"Pukaki 湖遊客中心、Lindis Pass 山頂停車場",
+  warn:["Lindis Pass（971 m）是全程最高風險路段，下午三點前通過","Hooker Valley 木棧道早上會結冰，帶簡易冰爪"],
+  plan:["7/6 停飛：改參加 9:45 冰川健行，13:00 出發，Hooker 不走","Lindis 下雪封路：照常走 Hooker，12:00 再查；15:00 前重開都來得及","車禍坍方、NZTA 排到下午：放棄 Hooker，10:30 前改走 Pig Root（SH83 → SH1 → SH85 → Cromwell → 瓦納卡，約 4–4.5 小時）","15:00 仍未放行：多住特威澤爾一晚，用 Booking App 通知瓦納卡會晚一天到","不要走 Danseys Pass（碎石山路，租車合約通常不允許）"],
+  photo:[["Hooker Valley 吊橋","吊橋加庫克山正面","RF 16、RF 28-70"],["That Wanaka Tree","夕陽","RF 28-70＋ND＋腳架，不爬樹"]],food:["Patagonia 巧克力和熱可可"]},
+ {d:"2027-07-08",w:"四",title:"瓦納卡慢遊日",stay:"ASURE Brookvale",drive:"2.0 h（含選配）",
+  items:[["8:15","That Wanaka Tree 日出倒影"],["上午","Mt Iron（1–1.5 小時）或 Puzzling World"],["下午","湖邊咖啡"],["選配","Blue Pools：沿 SH6 往北單程約 75 km、1 小時，中午前後通過湖邊路段"]],
+  stops:"Lake Hawea 觀景台、The Neck 觀景台",
+  warn:["往 Blue Pools 的 SH6 沿湖路窄彎多，背陰處會結冰","Roy's Peak 冬天積雪結冰，不建議"],
+  plan:["7/7 若 Lindis 封路晚一天到，這天就是移動日"]},
+ {d:"2027-07-09",w:"五",title:"瓦納卡 → 皇后鎮",stay:"Autoline Motel（3 晚，有 SPA 浴缸）",drive:"1.4 h",
+  items:[["9:30","出發，途中停 Cardrona Hotel、Zig Zag Lookout"],["中午","箭鎮逛老街、吃午餐"],["15:00","入住皇后鎮"],["晚上","Fergburger（避開尖峰）"]],
+  roads:[["瓦納卡 → Cardrona","Cardrona Valley Rd","25","25 分"],["Cardrona → 箭鎮","Crown Range Rd","30","35 分"],["箭鎮 → 皇后鎮","SH6","20","25 分"],["替代：經 Cromwell","SH6（Kawarau Gorge）","115","1 時 25 分"]],
+  fuel:"瓦納卡",stops:"Cardrona Hotel、Crown Range Zig Zag Lookout",
+  warn:["Crown Range（1,076 m）常要裝雪鍊，箭鎮側是一連串髮夾彎；結冰就改走 Cromwell","Kawarau Gorge 峽谷陰暗、落石、黑冰，放慢不超車"],
+  photo:[["Zig Zag Lookout","俯瞰皇后鎮盆地","RF 16、RF 28-70"]],food:["Fergburger","Cookie Time 熱餅乾"]},
+ {d:"2027-07-10",w:"六",title:"格林諾基與 Skyline",stay:"Autoline Motel",drive:"1.5 h",
+  items:[["9:30","出發往格林諾基，途中停 Bennetts Bluff"],["中午","格林諾基碼頭紅色小屋、午餐"],["下午","回皇后鎮"],["16:00","Skyline 纜車、Luge，山上看夕陽和夜景"]],
+  roads:[["皇后鎮 → 格林諾基","Glenorchy–Queenstown Rd","46","45 分"]],
+  stops:"Bennetts Bluff（彎道旁，進出小心）、格林諾基碼頭",
+  warn:["沿湖彎道多、有背陰結冰路段"],
+  photo:[["Bennetts Bluff","經典湖景","RF 16、RF 28-70"],["Skyline","夕陽到藍調夜景","RF 28-70，約 17:00–17:40"]]},
+ {d:"2027-07-11",w:"日",title:"皇后鎮彈性日",stay:"Autoline Motel",drive:"彈性",
+  items:[["全天","可選：滑雪（搭接駁巴士）、Shotover 噴射快艇、Onsen 溫泉，或在箭鎮、湖邊慢慢逛"]],
+  warn:["Coronet Peak、Remarkables 上山路是碎石之字路，不要自己開"],
+  plan:["7/6、7/7 冰川健行都停飛：今天從皇后鎮出發補做（Alpine Guides 透過 True South Flights）"]},
+ {d:"2027-07-12",w:"一",title:"皇后鎮 → 蒂阿瑙",stay:"ASURE Explorer（2 晚，暖氣＋電熱毯）",drive:"2.4 h",
+  items:[["9:30","出發，途中停 Devil's Staircase Lookout"],["中午過後","抵達，湖邊散步、確認明天一日團集合點"],["晚上","螢火蟲洞（從 Explorer 走路就到碼頭）"]],
+  roads:[["皇后鎮 → Kingston","SH6","47","45 分"],["Kingston → Mossburn","SH6 → SH94","75","55 分"],["Mossburn → 蒂阿瑙","SH94","60","45 分"]],
+  fuel:"到蒂阿瑙後加滿",stops:"Devil's Staircase Lookout、Kingston",
+  warn:["Devil's Staircase 沿湖彎道；Mossburn 一帶早上常起霧，也常有運牛羊的大貨車"]},
+ {d:"2027-07-13",w:"二",title:"米佛峽灣一日團（不開車）",stay:"ASURE Explorer",drive:"一日團",
+  items:[["9:45","集合點報到（10:00–10:15 出發），沿途停 Mirror Lakes、The Chasm"],["中午","峽灣遊船約 2 小時"],["18:00","約這時回到蒂阿瑙"]],
+  warn:["業者參考：Epic Milford NZ$259（16 人小團）、VIP Milford NZ$125–150、Southern Discoveries NZ$229、Pure Milford NZ$185；不建議 InterCity（不能退款）","沙蠅多，帶防蚊液；下雨時瀑布反而最壯觀"],
+  plan:["封路時業者通常提供改期或退款；7/14 沒有空檔","備案：Manapouri 出發的 Doubtful Sound 一日遊，或在蒂阿瑙休息"],
+  photo:[["米佛峽灣","Mitre Peak、瀑布、海豹岩","RF 28-70、RF 70-200、Ace Pro 2；停靠時間短，先裝好鏡頭"]]},
+ {d:"2027-07-14",w:"三",title:"蒂阿瑙 → 但尼丁＋半島巴士團",stay:"高尼達尼丁公寓 或 阿姆羅斯（二選一）",drive:"3.8 h",
+  items:[["8:30","出發"],["10:15","Gore 加油、喝咖啡"],["12:15","到但尼丁，午餐、入住"],["下午","Monarch Peninsula Encounters + Albatross Tour：信天翁 60 分＋黃眼企鵝 90 分，可到住宿接送"],["16:30","不參加巴士團：火車站、Baldwin Street、Signal Hill 夕陽"]],
+  roads:[["蒂阿瑙 → Mossburn","SH94","60","45 分"],["Mossburn → Gore","SH94","80","1 時"],["Gore → 但尼丁","SH1","150","1 時 45 分"]],
+  fuel:"Gore",
+  warn:["半島搭巴士團，不用自己開沒有護欄的沿水道路","看動物不開閃光燈"],
+  photo:[["半島巴士團","信天翁、黃眼企鵝","RF 70-200"]],food:["Bluff 生蠔（七月產季）、Speight's 啤酒"]},
+ {d:"2027-07-15",w:"四",title:"但尼丁 → 奧瑪魯",stay:"THE MEWS（套房有樓梯）",drive:"2.6 h",
+  items:[["8:45","二選一：Sandfly Bay 看海獅，或 9:30 進 Orokonui 生態保護區看特有鳥類"],["12:30","Moeraki Boulders（先查潮汐，低潮前後最好）"],["13:30","Katiki Point 看海狗"],["15:00","到奧瑪魯入住"],["17:30","黃昏看藍企鵝（禁止拍照）"]],
+  roads:[["但尼丁 → Sandfly Bay","Highcliff Rd → Seal Point Rd","20","30 分"],["Sandfly Bay → Moeraki","回市區接 SH1 北上","95","1 時 20 分"],["或：但尼丁 → Orokonui","SH1 北上照指標","25","30 分"],["或：Orokonui → Moeraki","SH1","65","55 分"],["Moeraki → Katiki Point","小路","3","5 分"],["Moeraki → 奧瑪魯","SH1","40","35 分"]],
+  stops:"Sandfly Bay、Moeraki Boulders、Katiki Point 燈塔",
+  warn:["和海獅保持 20 公尺以上，不要擋住牠們回海的路","Highcliff Rd 窄又彎；SH1 Kilmog 山坡常起霧結冰","Katiki Point 最後一小段是碎石，可停在入口走進去"],
+  plan:["下雨：維多利亞老城、Steampunk HQ"],
+  photo:[["Moeraki Boulders","大圓石","RF 16＋CPL，小心大浪"],["Katiki Point","近距離海狗","RF 28-70，不靠太近"]],food:["Whitestone 起司工廠試吃"]},
+ {d:"2027-07-16",w:"五",title:"奧瑪魯 → 基督城",stay:"諾富特機場酒店",drive:"3.3 h",
+  items:[["9:00","出發，每 2 小時休息一次"],["中午","到基督城：植物園、紙教堂、Riverside Market"],["15:30","南極中心（就在機場旁）"],["17:30","前還車：加滿油、檢查車身，比 19:00 還車少算一天"],["晚上","走路到諾富特入住，整理行李"]],
+  roads:[["奧瑪魯 → Timaru","SH1","85","1 時"],["Timaru → Ashburton","SH1","77","55 分"],["Ashburton → 基督城","SH1（Rakaia 大橋）","85","1 時"],["市區 → 機場","Memorial Ave","12","20 分"]],
+  warn:["坎特伯雷平原長直路易疲勞；Timaru、Ashburton 附近有測速"]},
+ {d:"2027-07-17",w:"六",title:"基督城 → 奧克蘭 → 香港",stay:"香港機場附近飯店",drive:"—",
+  items:[["7:00","到機場報到（國內線）"],["9:00","NZ548 基督城 → 奧克蘭（10:25 抵達）"],["13:25","CX198 奧克蘭 → 香港（21:05 抵達）"],["21:05","香港入境，到機場附近飯店過夜"]],
+  warn:["香港入境要帶「台灣居民預辦入境登記」A4 列印並親筆簽名的通知書，和護照一起出示","14 小時轉機行李是否留在機場，以旅行社回覆為準"]},
+ {d:"2027-07-18",w:"日",title:"香港 → 高雄",stay:"到家",drive:"—",
+  items:[["11:05","CX424 香港 → 高雄（12:40 抵達）"]]}
 ];
 
-/* bookings shown on the prep tab; money in its own currency */
-const BOOKINGS = [
- {d:"2027-01-22",kind:"機票",title:"台灣虎航 IT662 高雄 → 金浦",when:"1/22（五）15:55 → 19:45",ref:"F3CZUI",note:"Wan、Nien-Tzu；行李各 20 kg；座位 1F、1E"},
- {d:"2027-01-22",kind:"住宿",title:"Baro Ato 弘大 2 號店",when:"1/22 – 1/24（2 晚）",ref:"",note:"雙人房；現場付 ₩240,000（現金或刷卡）；入住前 7 天內取消收全額；入住 15:00、退房 11:00；首爾市麻浦區東橋路 25 街 26-14；電話 +82 2-336-2614"},
- {d:"2027-01-24",kind:"交通",title:"龍平接駁巴士",when:"1/24 首爾 → 龍平、1/25 龍平 → 首爾",ref:"",note:"還沒訂",todo:true},
- {d:"2027-01-24",kind:"住宿",title:"龍飯店（Dragon Valley Hotel）",when:"1/24（1 晚）",ref:"",note:"已訂好"},
- {d:"2027-01-25",kind:"機票",title:"大韓航空 KE1227 金浦 → 濟州",when:"1/25（一）20:20 → 21:35",ref:"E4EB72",note:"Wan、Nien-Tzu 同一筆訂位；行李各 20 kg；金浦國內線 D 航廈"},
- {d:"2027-01-25",kind:"住宿",title:"Ventimo Hotel & Residence Jeju",when:"1/25 – 1/26（1 晚）",ref:"",note:"TWD 2,188，已確認"},
- {d:"2027-01-26",kind:"租車",title:"濟州租車",when:"1/26 取車 – 1/30 還車",ref:"",note:"還沒訂；記得加兒童座椅",todo:true},
- {d:"2027-01-26",kind:"住宿",title:"1/26 – 1/28 三晚",when:"西歸浦 1 晚、城山 1 晚、1/28 待定",ref:"",note:"還沒訂",todo:true},
- {d:"2027-01-29",kind:"住宿",title:"Ventimo Hotel & Residence Jeju",when:"1/29 – 1/30（1 晚）",ref:"",note:"TWD 1,967，已確認"},
- {d:"2027-01-30",kind:"機票",title:"台灣虎航 IT675 濟州 → 高雄",when:"1/30（六）11:15 → 12:35",ref:"R6DRKP",note:"Wan 行李 35 kg、Nien-Tzu 20 kg；座位 1F、1E；₩563,200"}
-];
-
-/* places: ko is the Korean (or English) name used for the Naver Map search */
-const PLACES = [
- ["首爾・龍平","金浦機場","김포국제공항","2027-01-22 2027-01-25","1/22 抵達；1/25 國內線 D 航廈飛濟州",0],
- ["首爾・龍平","Baro Ato 弘大 2 號店","서울 마포구 동교로25길 26-14","2027-01-22 2027-01-23","1/22–1/24 住宿",0],
- ["首爾・龍平","龍平滑雪場","용평리조트","2027-01-24 2027-01-25","滑雪",0],
- ["首爾・龍平","龍飯店 Dragon Valley Hotel","드래곤밸리호텔","2027-01-24","1/24 住宿",0],
- ["濟州市","濟州國際機場","제주국제공항","2027-01-25 2027-01-30","1/25 晚上抵達、1/30 回程",0],
- ["濟州市","Ventimo Hotel & Residence Jeju","Ventimo Hotel Jeju","2027-01-25 2027-01-29","1/25、1/29 住宿",0],
- ["濟州市","黑豬肉一條街（豚香氣）","제주 흑돼지거리","","候選（原規劃的第一晚晚餐）",0],
- ["濟州市","東門市場","동문재래시장","2027-01-29","夜市、伴手禮最便宜",0],
- ["濟州市","七星路步行街","칠성로 쇼핑거리","","候選：Olive Young、服飾、球鞋",0],
- ["濟州市","熟成到","숙성도","2027-01-29","告別烤肉首選，要候位",0],
- ["濟州市","88 烤肉","","2027-01-29","熟成到的備案，蓮洞商圈",0],
- ["涯月・西部","Arte Museum 濟州","아르떼뮤지엄 제주","","候選：室內光影展",0],
- ["涯月・西部","ASSISI 涯月香氛","애월아시시","","候選：濟州限定香水，週四公休",0],
- ["涯月・西部","Saebyeol 羊駝牧場","Saebyeol Alpaca","","候選：餵羊駝（地圖名稱待確認）",0],
- ["漢拏山・西南","1100 高地","1100고지 휴게소","2027-01-26","開車直達玩雪",0],
- ["漢拏山・西南","山房山炭火帶魚","","2027-01-26","午餐（店名待確認）",0],
- ["漢拏山・西南","山茶花之丘","카멜리아힐","2027-01-26","冬天山茶花",1],
- ["漢拏山・西南","Osulloc 綠茶博物館","오설록 티뮤지엄","2027-01-26","綠茶霜淇淋、茶包禮盒",0],
- ["西歸浦","正房瀑布","정방폭포","2027-01-27","入海瀑布",1],
- ["西歸浦","每日偶來市場","서귀포매일올레시장","2027-01-27","橘子糖、小吃",0],
- ["西歸浦","E-Mart 西歸浦店","이마트 서귀포점","2027-01-27","零食泡麵大採購",0],
- ["城山・東部","城山港","성산포항 종합여객터미널","2027-01-28","搭船去牛島",0],
- ["城山・東部","牛島","우도","2027-01-28","電動車環島、花生冰淇淋",1],
- ["城山・東部","西濱白沙","서빈백사","2027-01-28","牛島珊瑚沙灘",0],
- ["城山・東部","城山日出峰","성산일출봉","2027-01-28","傍晚看海",0],
- ["城山・東部","史努比花園","스누피가든","2027-01-29","限定周邊",1],
- ["城山・東部","Aqua Planet 濟州","아쿠아플라넷 제주","2027-01-29","水族館、海獅表演",1]
+const DEADLINES = [
+ ["2027-03-31","租車訂好（建議 2–3 月；先卡位免費取消方案，之後比價）"],
+ ["2027-06-26","ASURE Explorer（蒂阿瑙）此日前無需付款"],
+ ["2027-06-27","ASURE Explorer 免費取消截止"],
+ ["2027-06-29","ASURE Brookvale（瓦納卡）免費取消截止，建議改晚一點的方案"],
+ ["2027-06-30","申請香港「台灣居民預辦入境登記」並 A4 列印簽名"],
+ ["2027-07-07","Autoline（皇后鎮）免費取消截止"],
+ ["2027-07-12","THE MEWS（奧瑪魯）免費取消截止"]
 ];
 
 const CHECKS = [
- {g:"機票與入境",items:["護照效期 6 個月以上","確認韓國入境要準備什麼（K-ETA、電子入境卡），以官網為準","申請國際駕照，和台灣駕照正本一起帶","旅平險＋不便險（含班機延誤、牛島停航）"]},
- {g:"住宿與交通",items:["預約龍平接駁巴士（1/24 去、1/25 回，回程要趕 20:20 班機）","雪具、雪衣租借","濟州租車（1/26 取車、1/30 還車），加兒童座椅","排好濟州 1/26–1/29 的行程","1/26–1/28 三晚住宿","1/14 前決定 Baro Ato 要不要保留（之後取消收全額）"]},
- {g:"出發前一週確認營業",items:["Saebyeol 羊駝牧場、山茶花之丘、Osulloc","史努比花園、Aqua Planet","熟成到的候位方式（CatchTable）","1100 高地 CCTV 看有沒有雪","牛島船班時間","龍平滑雪場開放的雪道"]},
- {g:"手機 App",items:["NAVER Map 或 Kakao Map（Google 地圖在韓國導航不準）","Kakao T（叫車）","Papago（翻譯，可拍照翻菜單）","CatchTable（餐廳候位）","韓國網卡或 eSIM"]},
- {g:"冬季裝備",items:["毛帽、手套、圍巾、防風外套","滑雪用防水手套、護目鏡","防滑鞋或簡易冰爪","雪球夾（大創可買）","保溫瓶","塑膠袋（裝烤肉味衣服）","伴手禮照回程行李額度分配（Wan 35 kg、Nien-Tzu 20 kg）"]}
+ {g:"機票（國泰經香港）",items:["把詢問訊息傳給山富旅遊，要求文字回覆","確認 NT$42,455 是每人還是兩人、含不含稅","確認同一張電子機票、行李直掛、行李額度","國泰官網比價同一組航班","預訂香港機場附近飯店（可免費取消）","申請香港預辦入境登記（兩人各一份）並列印簽名"]},
+ {g:"訂位與文件",items:["申請 NZeTA 電子旅行許可","確認紐西蘭對台灣駕照的英文譯本規定，帶駕照正本＋國際駕照","租車（兩驅即可）＋加租雪鍊，先訂可免費取消方案","蒂卡波、特威澤爾改訂成各 1 晚","瓦納卡改成取消期限較晚的方案","問「待確認」住宿有沒有暖氣和電熱毯","預約 Dark Sky Project 觀星團（7/5）","預約冰川直升機健行（7/6 9:45，確認可改到 7/7 9:45）","預約螢火蟲洞（7/12 晚上）","預約米佛一日團（7/13，可取消方案）","預約半島巴士團（7/14 下午）","預約奧瑪魯藍企鵝（7/15 黃昏）","投保旅平險＋不便險，確認天候封路理賠條款"]},
+ {g:"租車",items:["比較 GO、Apex、Ezi、Snap、Ace、Jucy、Budget、Thrifty","確認兩大一小行李放得下（掀背車可能勉強）","零自負額或第三方保險，含擋風玻璃與輪胎","確認 7/4 晚上 18:00 後能否取車","確認信用卡是否附海外租車險"]},
+ {g:"行前一週",items:["PhotoPills 確認月相和銀河位置","查 7/15 Moeraki 潮汐時間","練習裝雪鍊","下載離線地圖（Lindis、庫克山、米佛一帶無訊號）","感冒藥看成分，含 pseudoephedrine 不要帶或附醫生證明","登山鞋刷乾淨，鞋底不留泥土","線上填好 NZTD 入境申報"]},
+ {g:"攝影與裝備",items:["腳架、手機遙控 App（Canon Camera Connect、FUJIFILM XApp）","CPL 偏光鏡、ND 減光鏡","R8 電池 3–4 顆、X-T50 電池 3 顆、Ace Pro 2 備用電池","鏡頭加熱帶、密封夾鏈袋（防結露）","記憶卡、行動電源、車用充電器、紅光頭燈","Ace Pro 2 胸前固定座、自拍棒、手腕安全繩","簡易冰爪（Hooker Valley 用）","可觸控薄手套＋厚手套、毛帽、偏光太陽眼鏡","防蚊液（米佛沙蠅）"]}
 ];
 
 const CATS = ["住宿","交通油錢","餐飲","門票活動","超市","購物","其他"];
-DAYS.forEach(x=>x.k=x.d);
+
+/* Google Maps: route = [origin, ...waypoints, destination] (English names so Google finds them); places = [label, search query] */
+const MAPS = {
+ "2027-07-03":{places:[["高雄小港機場","Kaohsiung International Airport"]]},
+ "2027-07-04":{route:["Christchurch Airport","Quest on Kilmore Christchurch"],
+   places:[["奧克蘭國際航廈","Auckland Airport International Terminal"],["奧克蘭國內航廈","Auckland Airport Domestic Terminal"],["Quest on Kilmore","Quest on Kilmore Christchurch"]]},
+ "2027-07-05":{route:["Quest on Kilmore Christchurch","Geraldine New Zealand","Fairlie Bakehouse","Church of the Good Shepherd Lake Tekapo"],
+   places:[["Fairlie Bakehouse","Fairlie Bakehouse"],["好牧羊人教堂","Church of the Good Shepherd Lake Tekapo"],["Tekapo Springs","Tekapo Springs"],["Dark Sky Project","Dark Sky Project Lake Tekapo"],["Haka House","Haka House Lake Tekapo"],["Lake Tekapo Village Motel","Lake Tekapo Village Motel"]]},
+ "2027-07-06":{route:["Lake Tekapo","Mount Cook Airport","Tasman Glacier View Track car park","Peter's Lookout","Twizel"],
+   places:[["Mount Cook 機場","Mount Cook Airport"],["Hermitage 飯店","The Hermitage Hotel Aoraki Mount Cook"],["Tasman Glacier View","Tasman Glacier View Track"],["Peter's Lookout","Peter's Lookout Lake Pukaki"],["Mt Cook Alpine Salmon","Mt Cook Alpine Salmon Lake Pukaki"]]},
+ "2027-07-07":{route:["Twizel","White Horse Hill Campground","Lake Pukaki Visitor Centre","ASURE Brookvale Motel Wanaka"],
+   places:[["Hooker Valley Track","Hooker Valley Track"],["Pukaki 湖遊客中心","Lake Pukaki Visitor Centre"],["Lindis Pass 山頂","Lindis Pass Summit"],["That Wanaka Tree","That Wanaka Tree"],["ASURE Brookvale","ASURE Brookvale Motel Wanaka"]]},
+ "2027-07-08":{places:[["That Wanaka Tree","That Wanaka Tree"],["Mt Iron","Mount Iron Track Wanaka"],["Puzzling World","Puzzling World Wanaka"],["Lake Hawea 觀景台","Lake Hawea Lookout"],["Blue Pools","Blue Pools Track Makarora"]]},
+ "2027-07-09":{route:["Wanaka","Cardrona Hotel","Crown Range Zig Zag Lookout","Arrowtown","Autoline Motel Queenstown"],
+   alt:["改走 Cromwell 路線",["Wanaka","Cromwell","Autoline Motel Queenstown"]],
+   places:[["Cardrona Hotel","Cardrona Hotel"],["Zig Zag Lookout","Crown Range Zig Zag Lookout"],["箭鎮","Arrowtown"],["Fergburger","Fergburger Queenstown"],["Autoline Motel","Autoline Motel Queenstown"]]},
+ "2027-07-10":{route:["Autoline Motel Queenstown","Bennetts Bluff Lookout","Glenorchy Wharf"],
+   places:[["Bennetts Bluff","Bennetts Bluff Lookout"],["格林諾基碼頭紅屋","Glenorchy Wharf Shed"],["Skyline 纜車","Skyline Queenstown"]]},
+ "2027-07-11":{places:[["Onsen 溫泉","Onsen Hot Pools Queenstown"],["Shotover Jet","Shotover Jet Queenstown"],["箭鎮","Arrowtown"],["Cookie Time","Cookie Time Cookie Bar Queenstown"]]},
+ "2027-07-12":{route:["Autoline Motel Queenstown","Devil's Staircase Lookout","Kingston New Zealand","ASURE Explorer Motel Te Anau"],
+   places:[["Devil's Staircase Lookout","Devil's Staircase Lookout"],["ASURE Explorer","ASURE Explorer Motel Te Anau"],["螢火蟲洞碼頭","Te Anau Glowworm Caves RealNZ"]]},
+ "2027-07-13":{places:[["Mirror Lakes","Mirror Lakes Fiordland"],["The Chasm","The Chasm Fiordland"],["米佛峽灣碼頭","Milford Sound Visitor Terminal"],["Doubtful Sound（備案）","Manapouri Doubtful Sound"]]},
+ "2027-07-14":{route:["ASURE Explorer Motel Te Anau","Gore New Zealand","Dunedin"],
+   places:[["但尼丁火車站","Dunedin Railway Station"],["Baldwin Street","Baldwin Street Dunedin"],["Signal Hill","Signal Hill Lookout Dunedin"],["皇家信天翁中心","Royal Albatross Centre"]]},
+ "2027-07-15":{route:["Dunedin","Moeraki Boulders","Katiki Point Lighthouse","THE MEWS Oamaru"],
+   places:[["Sandfly Bay","Sandfly Bay Dunedin"],["Orokonui","Orokonui Ecosanctuary"],["Moeraki Boulders","Moeraki Boulders"],["Katiki Point","Katiki Point Lighthouse"],["藍企鵝","Oamaru Blue Penguin Colony"],["Whitestone 起司","Whitestone Cheese Oamaru"],["THE MEWS","THE MEWS Oamaru"]]},
+ "2027-07-16":{route:["THE MEWS Oamaru","Christchurch Botanic Gardens","International Antarctic Centre","Novotel Christchurch Airport"],
+   places:[["植物園","Christchurch Botanic Gardens"],["紙教堂","Cardboard Cathedral Christchurch"],["Riverside Market","Riverside Market Christchurch"],["南極中心","International Antarctic Centre"],["諾富特機場酒店","Novotel Christchurch Airport"]]},
+ "2027-07-17":{places:[["基督城機場","Christchurch Airport"]]}
+};
+const gq = s=>encodeURIComponent(s);
+function dirURL(r){const u="https://www.google.com/maps/dir/?api=1&travelmode=driving&origin="+gq(r[0])+"&destination="+gq(r[r.length-1]);
+  return r.length>2?u+"&waypoints="+r.slice(1,-1).map(gq).join("%7C"):u}
+const placeURL = q=>"https://www.google.com/maps/search/?api=1&query="+gq(q);
+function mapsHTML(d){const m=MAPS[d]; if(!m) return "";
+  let h=`<div class="sec"><h3>Google 地圖</h3>`;
+  if(m.route) h+=`<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px"><a class="btn" href="${dirURL(m.route)}" target="_blank" rel="noopener">開啟今天的導航路線</a>${m.alt?`<a class="btn ghost" href="${dirURL(m.alt[1])}" target="_blank" rel="noopener">${esc(m.alt[0])}</a>`:""}</div>`;
+  h+=`<div class="cats">${m.places.map(([l,q])=>`<a class="maplink" href="${placeURL(q)}" target="_blank" rel="noopener">${esc(l)}</a>`).join("")}</div>`;
+  if(m.route) h+=`<p class="muted" style="font-size:.78rem;margin:10px 0 0">路線依景點順序排好，實際路況以 NZTA 為準。山區沒訊號，出發前在 Google 地圖 App 下載離線地圖。</p>`;
+  return h+`</div>`}
 
 /* ---------- state ---------- */
-const S = {tab:"today",day:null,expenses:[],settings:{rate:43,payers:["Wan","朋友"]},checks:{},
-  cat:"餐飲",mode:"local",armed:null,area:"全部"};
-const LS = "korea9-app";
+const S = {tab:"today",day:null,expenses:[],settings:{rate:19,payers:["Wan","旅伴"]},checks:{},
+  cat:"餐飲",mode:"local",armed:null};
+const LS = "nz27-handbook";
 function loadLocal(){try{const o=JSON.parse(localStorage.getItem(LS)||"{}");
   if(o.expenses)S.expenses=o.expenses; if(o.settings)S.settings=Object.assign(S.settings,o.settings);
   if(o.checks)S.checks=o.checks; if(o.tab)S.tab=o.tab; if(o.day)S.day=o.day;}catch(e){}}
@@ -275,159 +319,176 @@ function saveLocal(){try{localStorage.setItem(LS,JSON.stringify({expenses:S.expe
 
 const $ = s=>document.querySelector(s);
 const esc = s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const iso = t=>t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");
-const todayISO = ()=>iso(new Date());
-const dateOf = i=>DAYS[i].d;
-const md = d=>{if(!d) return ""; const [,m,dd]=d.split("-");return (+m)+"/"+(+dd)};
-const dayIdx = k=>DAYS.findIndex(x=>x.k===k);
-const tripDay = ()=>{const t=todayISO(); const i=DAYS.findIndex((_,j)=>dateOf(j)===t); return i<0?null:DAYS[i]};
-const dayLabel = i=>`Day ${i+1} · ${md(DAYS[i].d)}（${DAYS[i].w}）`;
-const naver = q=>"https://map.naver.com/p/search/"+encodeURIComponent(q);
+const todayISO = ()=>{const t=new Date();return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")};
+const md = iso=>{const [,m,d]=iso.split("-");return (+m)+"/"+(+d)};
+const tripDay = ()=>DAYS.find(x=>x.d===todayISO());
 function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2200)}
 
 /* ---------- day view ---------- */
 function dayHTML(x){
   const i=DAYS.indexOf(x);
-  let h=`<div class="dayhead"><div class="date">${esc(dayLabel(i))}</div><h2>${esc(x.title)}</h2>
-   <div class="meta"><span class="pill">住 ${esc(x.stay)}</span><span class="pill must">${esc(x.area)}</span></div></div>`;
-  h+=`<div class="sec"><h3>行程</h3><ul class="timeline">${x.items.map(([t,s,m])=>`<li><span class="t">${esc(t)}</span><div>${m?'<span class="must-mark">✓ 必去</span> ':""}${esc(s)}</div></li>`).join("")}</ul></div>`;
-  const bk=BOOKINGS.filter(b=>b.d===x.d);
-  if(bk.length) h+=`<div class="sec"><h3>今天的訂位</h3>${bk.map(bookingRow).join("")}</div>`;
-  if(x.draft) h+=`<div class="callout info"><h3>規劃中</h3>濟州只確定日期，這天先放半年前的初步安排，之後再調整。</div>`;
+  let h=`<div class="dayhead"><div class="date">${md(x.d)}（${x.w}） · 第 ${i} 天</div><h2>${esc(x.title)}</h2>
+   <div class="meta"><span class="pill">住 ${esc(x.stay)}</span>${x.drive!=="—"?`<span class="pill">開車 ${esc(x.drive)}</span>`:""}</div></div>`;
+  h+=`<div class="sec"><h3>行程</h3><ul class="timeline">${x.items.map(([t,s])=>`<li><span class="t">${esc(t)}</span><div>${esc(s)}</div></li>`).join("")}</ul></div>`;
   if(x.warn) h+=`<div class="callout"><h3>今天注意</h3><ul class="plain">${x.warn.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>`;
-  if(x.plan) h+=`<div class="callout info"><h3>備案</h3><ul class="plain">${x.plan.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>`;
-  const ps=PLACES.filter(p=>p[3].split(" ").includes(x.k)&&p[2]);
-  if(ps.length) h+=`<div class="sec"><h3>今天的地點</h3>${ps.map(placeRow).join("")}</div>`;
+  if(x.plan) h+=`<div class="callout info"><h3>天氣不好或封路的備案</h3><ul class="plain">${x.plan.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>`;
+  if(x.roads){
+    const km=x.roads.filter(r=>!/^(或|替代)/.test(r[0])).reduce((a,r)=>a+(+r[2]||0),0);
+    h+=`<div class="sec"><h3>行車路線 <span class="muted mono" style="font-size:.8rem;font-weight:400">約 ${km} km</span></h3><div class="tablewrap"><table><thead><tr><th>路段</th><th>公路</th><th>km</th><th>車程</th></tr></thead><tbody>${x.roads.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="n mono">${esc(r[2])}</td><td class="n">${esc(r[3])}</td></tr>`).join("")}</tbody></table></div>`;
+    h+=`<dl class="kv" style="margin-top:10px">${x.fuel?`<dt>加油</dt><dd>${esc(x.fuel)}</dd>`:""}${x.stops?`<dt>臨停</dt><dd>${esc(x.stops)}</dd>`:""}</dl></div>`;
+  } else if(x.stops){h+=`<div class="sec"><dl class="kv"><dt>臨停</dt><dd>${esc(x.stops)}</dd></dl></div>`}
+  h+=mapsHTML(x.d);
+  if(x.photo) h+=`<div class="sec"><h3>拍照</h3><div class="tablewrap"><table><tbody>${x.photo.map(p=>`<tr><td><b>${esc(p[0])}</b><br><span class="muted">${esc(p[1])}</span></td><td>${esc(p[2])}</td></tr>`).join("")}</tbody></table></div></div>`;
   if(x.food) h+=`<div class="sec"><h3>吃什麼</h3><ul class="plain">${x.food.map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div>`;
-  const spent=S.expenses.filter(e=>e.date===x.k);
+  const spent=S.expenses.filter(e=>e.date===x.d);
   if(spent.length){const t=spent.reduce((a,e)=>a+toTWD(e),0);h+=`<div class="sec"><h3>這天花了</h3><div class="mono">NT$ ${fmt(t)}　<span class="muted">${spent.length} 筆</span></div></div>`}
-  const nav=`<div style="display:flex;justify-content:space-between;margin-top:16px">${i>0?`<button class="btn ghost small" data-go="${DAYS[i-1].k}">‹ Day ${i}</button>`:"<span></span>"}${i<DAYS.length-1?`<button class="btn ghost small" data-go="${DAYS[i+1].k}">Day ${i+2} ›</button>`:""}</div>`;
+  const nav=`<div style="display:flex;justify-content:space-between;margin-top:16px">${i>0?`<button class="btn ghost small" data-go="${DAYS[i-1].d}">‹ ${md(DAYS[i-1].d)}</button>`:"<span></span>"}${i<DAYS.length-1?`<button class="btn ghost small" data-go="${DAYS[i+1].d}">${md(DAYS[i+1].d)} ›</button>`:""}</div>`;
   return h+nav;
 }
 function renderStrip(){
   const st=$("#strip"); st.hidden=S.tab!=="days";
   if(st.hidden) return;
   const t=todayISO();
-  st.innerHTML=DAYS.map((x,i)=>`<button class="chip${dateOf(i)===t?" today":""}" data-go="${x.k}" aria-current="${x.k===S.day}"><b>${md(x.d)}</b><span>${x.w}</span></button>`).join("");
+  st.innerHTML=DAYS.map(x=>`<button class="chip${x.d===t?" today":""}" data-go="${x.d}" aria-current="${x.d===S.day}"><b>${md(x.d)}</b><span>${x.w}</span></button>`).join("");
   const cur=st.querySelector('[aria-current="true"]'); if(cur) cur.scrollIntoView({inline:"center",block:"nearest"});
 }
 
 /* ---------- today ---------- */
 function todayHTML(){
   const x=tripDay();
-  if(x) return `<div class="callout info" style="margin-top:14px"><b>旅途中</b>：今天是 Day ${DAYS.indexOf(x)+1}。出門前看一下天氣和營業時間。</div>`+dayHTML(x);
-  const t=todayISO(), start=DAYS[0].d;
+  if(x) return `<div class="callout info" style="margin-top:14px"><b>旅途中</b>：今天是第 ${DAYS.indexOf(x)} 天。出發前先查 NZTA 路況和 MetService。</div>`+dayHTML(x);
+  const t=todayISO();
+  if(t>DAYS[DAYS.length-1].d) return `<div class="count"><div class="big">回來了</div><p class="muted">旅程結束。記帳頁還留著全部花費。</p></div>`;
+  const days=Math.ceil((new Date(DAYS[0].d+"T00:00:00")-new Date(t+"T00:00:00"))/864e5);
   const done=countChecks();
-  let h="";
-  if(t>DAYS[DAYS.length-1].d){
-    h+=`<div class="count"><div class="big">回來了</div><p class="muted">旅程結束。記帳頁還留著全部花費。</p></div>`;
-  } else {
-    const days=Math.ceil((new Date(start+"T00:00:00")-new Date(t+"T00:00:00"))/864e5);
-    h+=`<div class="count"><div class="label">距離出發</div><div class="big">${days} <span style="font-size:1.2rem">天</span></div>
-      <p class="muted" style="margin:6px 0 0">1/22（五）15:55 虎航 IT662 高雄出發。旅途中這頁會自動顯示當天行程。</p></div>`;
-  }
-  h+=`<div class="sec"><h3>9 天一覽</h3>${DAYS.map((d,i)=>`<div class="place" style="cursor:pointer" data-go="${d.k}"><div><b class="mono" style="color:var(--accent)">${md(d.d)}</b> <span class="muted">${d.w} · ${esc(d.area)}</span>　${esc(d.title)}<div class="ko">住 ${esc(d.stay)}</div></div><span class="muted">›</span></div>`).join("")}</div>
-    <div class="callout"><h3>還沒定案</h3><ul class="plain"><li>濟州 1/26–1/29 怎麼玩還在規劃，目前放的是半年前的初步安排</li><li>1/26–1/28 三晚住宿、濟州租車、龍平接駁巴士還沒訂</li><li>1/23 首爾要逛哪幾區</li><li>幾個餐廳和景點出發前要再確認營業</li></ul></div>
-    <div class="sec"><h3>行前清單</h3><p style="margin:0 0 10px" class="progress">已完成 ${done.d} / ${done.n}</p><button class="btn" data-tabgo="prep">打開清單</button></div>`;
-  return h;
+  return `<div class="count"><div class="label">距離出發</div><div class="big">${days} <span style="font-size:1.2rem">天</span></div>
+    <p class="muted" style="margin:6px 0 0">7/3（六）13:40 CX423 高雄出發。旅途中這頁會自動顯示當天行程。</p></div>
+    <div class="sec"><h3>接下來的期限</h3>${DEADLINES.map(([d,s])=>`<div class="deadline${d<t?" past":""}"><span class="d">${md(d)}</span><span>${esc(s)}</span></div>`).join("")}</div>
+    <div class="sec"><h3>行前清單</h3><p style="margin:0 0 10px" class="progress">已完成 ${done.d} / ${done.n}</p><button class="btn" data-tabgo="list">打開清單</button></div>
+    <div class="sec"><h3>先看看第一天</h3><p class="muted" style="margin:0 0 10px">${esc(DAYS[1].title)} · 住 ${esc(DAYS[1].stay)}</p><button class="btn ghost" data-go="${DAYS[1].d}">看 7/4 行程</button></div>`;
 }
 
-/* ---------- places ---------- */
-function placeRow(p){
-  const [,name,ko,days,note,must]=p;
-  const tags=days.split(" ").filter(Boolean).map(k=>`<span class="pill">${md(k)}</span>`).join("")+(must?`<span class="pill must">必去</span>`:"");
-  return `<div class="place"><div><b>${esc(name)}</b>${ko?` <span class="ko">${esc(ko)}</span>`:""}<div class="note muted">${esc(note)}</div><div class="tags">${tags}</div></div>${ko?`<a class="maplink" href="${naver(ko)}" target="_blank" rel="noopener">Naver 地圖</a>`:""}</div>`;
-}
-function placesHTML(){
-  const areas=["全部",...new Set(PLACES.map(p=>p[0]))];
-  const list=S.area==="全部"?areas.slice(1):[S.area];
-  return `<div class="dayhead"><h2>地點</h2><div class="muted" style="font-size:.85rem">點「Naver 地圖」用韓文名稱搜尋，在韓國導航比 Google 準</div>
-    <div class="filters" id="filters">${areas.map(a=>`<button type="button" data-area="${esc(a)}" aria-pressed="${a===S.area}">${esc(a)}</button>`).join("")}</div></div>`+
-    list.map(a=>`<div class="sec"><h3>${esc(a)}</h3>${PLACES.filter(p=>p[0]===a).map(placeRow).join("")}</div>`).join("")+
-    `<div class="sec"><h3>已經排除的地方</h3><ul class="plain">
-     <li>Nexon 電腦博物館：整修更名中</li><li>Brick Campus 積木樂園：2024 年永久歇業</li><li>樹木園主題樂園（冰雕館）：暫停營業</li>
-     <li>Cafe the Container 橘子籃咖啡廳：為了留時間採買拿掉</li></ul></div>`;
-}
-
-/* ---------- bookings ---------- */
-function bookingRow(b){
-  return `<div class="place"><div><span class="pill${b.todo?" warn":""}">${esc(b.kind)}</span> <b>${esc(b.title)}</b><div class="ko">${esc(b.when)}</div><div class="note">${esc(b.note)}</div></div>${b.ref?`<span class="mono" style="font-size:.85rem">${esc(b.ref)}</span>`:""}</div>`;
-}
-
-/* ---------- prep ---------- */
-const ckey=(g,i)=>"c"+g+"_"+i;
-function countChecks(){let n=0,d=0;CHECKS.forEach((g,gi)=>g.items.forEach((_,i)=>{n++;if(S.checks[ckey(gi,i)])d++}));return {n,d}}
-function prepHTML(){
-  const c=countChecks();
-  return `<div class="dayhead"><h2>行前準備</h2><div class="progress">已完成 ${c.d} / ${c.n}</div></div>
-  <div class="sec"><h3>訂位一覽</h3>${BOOKINGS.map(bookingRow).join("")}<p class="muted" style="font-size:.8rem;margin:10px 0 0">右邊是訂位代號，報到時出示確認單畫面即可。</p></div>`+
-   CHECKS.map((g,gi)=>`<div class="sec"><h3>${esc(g.g)}</h3>${g.items.map((it,i)=>{const k=ckey(gi,i),on=!!S.checks[k];return `<label class="check${on?" done":""}"><input type="checkbox" data-ck="${k}"${on?" checked":""}><span>${esc(it)}</span></label>`}).join("")}</div>`).join("")+
-  `<div class="callout red"><h3>緊急電話</h3>警察 <b class="mono">112</b>　救護、消防 <b class="mono">119</b>　觀光翻譯熱線 <b class="mono">1330</b>（有中文）</div>
-  <div class="sec"><h3>交通</h3><ul class="plain">
-   <li>首爾用地鐵和 T-money 卡；濟州景點分散，租車自駕，開不了車的段落用 Kakao T 叫車</li>
-   <li>韓國靠右行駛，和台灣一樣</li>
-   <li>導航用 NAVER Map 或 Kakao Map，輸入韓文名稱或電話最準</li></ul></div>
-  <div class="sec"><h3>公休與營業</h3><ul class="plain">
-   <li>ASSISI 涯月香氛：每週四公休</li>
-   <li>羊駝牧場、山茶花之丘、史努比花園、Aqua Planet、Osulloc：規劃時查到全年無休，颱風或大雪可能臨時關閉</li>
-   <li>規劃時曾推薦到已歇業或整修中的地方，所以出發前一週再逐一確認</li></ul></div>
-  <div class="sec"><h3>伴手禮去哪買</h3><div class="tablewrap"><table><thead><tr><th>天</th><th>地點</th><th>買什麼</th></tr></thead><tbody>
-   <tr><td>1/26</td><td>Osulloc</td><td>綠茶抹醬、茶包禮盒</td></tr>
-   <tr><td>1/27</td><td>偶來市場、E-Mart</td><td>橘子糖、泡麵、零食、海苔</td></tr>
-   <tr><td>1/29</td><td>史努比花園</td><td>濟州限定史努比周邊</td></tr>
-   <tr><td>1/29</td><td>東門市場</td><td>橘子巧克力、柑橘乾、石頭爺爺小物</td></tr>
-   <tr><td>1/30</td><td>濟州機場</td><td>免稅店取貨、Paris Baguette 花生夾心餅乾</td></tr>
-  </tbody></table></div></div>`;
+/* ---------- notes ---------- */
+function notesHTML(){
+  return `<div class="dayhead"><h2>出發前與旅途中須知</h2></div>
+  <div class="callout red"><h3>緊急電話 111</h3>警察、救護、消防都撥 111。路況查 NZTA，天氣查 MetService。</div>
+  <div class="sec"><h3>入境紐西蘭與生物安全</h3><ul class="plain">
+   <li>先辦 NZeTA，入境申報（NZTD）線上填好，食物欄直接勾 Yes 最保險</li>
+   <li>有申報最多被檢查或沒收；沒申報被查到當場罰 <b>NZ$400</b>，一顆機上蘋果也一樣</li>
+   <li>要申報：所有食物、蜂蜜、茶葉、中藥材、木製品、羽毛貝殼、登山鞋和戶外裝備</li>
+   <li>海關前有棄置箱，猶豫就丟；被抽查可能多 20–40 分鐘</li></ul></div>
+  <div class="sec"><h3>藥品</h3><ul class="plain">
+   <li>藥品放隨身行李，保留原包裝；處方藥最多約 3 個月用量，附英文處方或醫生證明</li>
+   <li>台灣綜合感冒藥常含 pseudoephedrine，在紐西蘭是管制藥品，含有就不要帶或附醫生證明</li>
+   <li>含動植物成分的保健品要申報（鹿茸、燕窩、蜂膠、膠原蛋白等）</li></ul></div>
+  <div class="sec"><h3>奧克蘭轉機（7/4）</h3><ul class="plain">
+   <li>國際和國內航廈是兩棟，相距約 950 m</li>
+   <li>入境 → 領行李 → 生物安檢 → Transfer Drop 重新託運 → 綠線步行或免費接駁 → 國內線安檢</li>
+   <li>轉機 3 小時 10 分，一般足夠</li></ul></div>
+  <div class="sec"><h3>香港過夜（7/17）</h3><ul class="plain">
+   <li>台灣護照無台胞證：申請「台灣居民預辦入境登記」，免費，兩人各一份</li>
+   <li>有效兩個月、可入境兩次；6 月底申請可涵蓋 7/17</li>
+   <li>通知書用 A4 列印並親筆簽名，資料要和護照完全一致；入口認明 gov.hk 或 immd.gov.hk</li></ul></div>
+  <div class="sec"><h3>冬季駕駛原則</h3><ul class="plain">
+   <li>靠左行駛，圓環讓右方來車；看到 Chains Required、Road Closed 一定遵守</li>
+   <li>每天 9:00 後出發、16:30 前抵達住宿，不摸黑開山路</li>
+   <li>黑冰：早上 10 點前背陰彎道、橋面最容易結冰；不急煞、不猛轉方向盤</li>
+   <li>單線橋看到紅色小箭頭，讓對向先過</li>
+   <li>不在路肩隨意停車拍照，開進觀景台或停車區</li>
+   <li>油箱剩一半就加油；未裝雪鍊被要求時可罰 NZ$750</li></ul>
+   <div class="tablewrap" style="margin-top:10px"><table><thead><tr><th>日期</th><th>路段</th><th>風險</th><th>對策</th></tr></thead><tbody>
+   <tr><td class="n">7/7</td><td>Lindis Pass 971 m</td><td><span class="pill red">高</span></td><td>查 NZTA、備雪鍊、15:00 前通過</td></tr>
+   <tr><td class="n">7/9</td><td>Crown Range 1,076 m</td><td><span class="pill red">高</span></td><td>結冰或要裝鍊就改走 Cromwell</td></tr>
+   <tr><td class="n">7/5</td><td>Burkes Pass</td><td><span class="pill warn">中</span></td><td>9:00 後出發</td></tr>
+   <tr><td class="n">7/6–7</td><td>SH80 沿 Pukaki 湖</td><td><span class="pill warn">中</span></td><td>拉開車距</td></tr>
+   <tr><td class="n">7/10</td><td>格林諾基路</td><td><span class="pill warn">中</span></td><td>放慢</td></tr>
+   <tr><td class="n">7/15</td><td>Highcliff Rd、Kilmog</td><td><span class="pill warn">中</span></td><td>放慢、開大燈</td></tr>
+   <tr><td class="n">7/16</td><td>坎特伯雷平原</td><td><span class="pill">低</span></td><td>每 2 小時休息</td></tr>
+   </tbody></table></div></div>
+  <div class="sec"><h3>租車取還</h3><ul class="plain">
+   <li>帶護照、台灣駕照正本、國際駕照、信用卡</li>
+   <li>取車繞車錄影；確認雪鍊尺寸、胎紋，請櫃台示範裝鍊</li>
+   <li>滿油還車；17:30 前還車可少算一天</li></ul></div>
+  <div class="sec"><h3>看動物</h3><ul class="plain">
+   <li>海獅保持 20 公尺以上，不擋住回海的路</li>
+   <li>藍企鵝禁止拍照；信天翁、黃眼企鵝不開閃光燈</li></ul></div>
+  <div class="sec"><h3>器材保護</h3><ul class="plain">
+   <li>電池低溫耗電快，放貼身口袋保暖</li>
+   <li>從戶外進室內前，相機先放密封袋回溫，避免結露</li>
+   <li>R8 單卡槽，每晚備份；多數國家公園禁飛空拍機</li></ul></div>
+  <div class="sec"><h3>實用連結</h3><ul class="plain">
+   <li><a href="https://www.journeys.nzta.govt.nz/" target="_blank" rel="noopener">NZTA Journey Planner（路況、封路）</a></li>
+   <li><a href="https://www.metservice.com/" target="_blank" rel="noopener">MetService（天氣、山區降雪）</a></li>
+   <li><a href="https://alpineguides.co.nz/tasman-glacier-heli-hike" target="_blank" rel="noopener">Alpine Guides 冰川直升機健行</a></li>
+   <li><a href="https://www.wildlife.co.nz/peninsula-encounters-albatross-tour" target="_blank" rel="noopener">Peninsula Encounters + Albatross Tour</a></li>
+   <li><a href="https://orokonui.nz/" target="_blank" rel="noopener">Orokonui 生態保護區</a></li>
+   <li><a href="https://www.chrislynchmedia.com/?p=7372" target="_blank" rel="noopener">Lindis Pass 繞道路線</a></li>
+  </ul><p class="muted" style="font-size:.8rem;margin:10px 0 0">車程、距離、價格為規劃時估算，出發前以官網和即時路況為準。</p></div>`;
 }
 
 /* ---------- ledger ---------- */
-const toTWD = e=>e.cur==="TWD"?+e.amt:+e.amt/(+S.settings.rate||43);
+const toTWD = e=>e.cur==="TWD"?+e.amt:+e.amt*(+S.settings.rate||19);
 const fmt = n=>Math.round(n).toLocaleString("en-US");
-function defaultDay(){const x=tripDay();return x?x.k:DAYS[0].k}
+function defaultDate(){const t=todayISO();return (t>=DAYS[0].d&&t<=DAYS[DAYS.length-1].d)?t:DAYS[1].d}
 function moneyHTML(){
   const ex=[...S.expenses].sort((a,b)=>(b.date+b.ts).localeCompare(a.date+a.ts));
-  const total=ex.reduce((a,e)=>a+toTWD(e),0), rate=+S.settings.rate||43;
+  const total=ex.reduce((a,e)=>a+toTWD(e),0), rate=+S.settings.rate||19;
   const [p1,p2]=S.settings.payers;
   const byCat=CATS.map(c=>[c,ex.filter(e=>e.cat===c).reduce((a,e)=>a+toTWD(e),0)]).filter(r=>r[1]>0);
   const maxC=Math.max(1,...byCat.map(r=>r[1]));
   const paid1=ex.filter(e=>e.payer===p1).reduce((a,e)=>a+toTWD(e),0), paid2=total-paid1;
   const diff=(paid1-paid2)/2;
-  const modeNote={db:"已同步儲存，換手機或重新整理都還在。",local:window.claude?"目前只存在這支手機的瀏覽器裡（登入 claude.ai 開啟可同步）。":"記帳存在這個瀏覽器裡；換手機、換瀏覽器或清除瀏覽資料就看不到。",loading:"連線中…"}[S.mode];
-  let h=`<div class="dayhead"><h2>記帳</h2><div class="muted" style="font-size:.85rem">匯率 1 TWD ＝ ${rate} KRW（可在下方修改）</div></div>
-  <div class="totals"><div class="tot"><div class="label">總花費</div><div class="v">NT$ ${fmt(total)}</div></div><div class="tot"><div class="label">約合韓元</div><div class="v">₩ ${fmt(total*rate)}</div></div></div>
+  const modeNote={db:"已同步儲存，換手機或重新整理都還在。",local:"資料存在這支裝置的瀏覽器裡，換手機或清除瀏覽資料會不見，記得到下方「備份」匯出。",loading:"連線中…"}[S.mode];
+  let h=`<div class="dayhead"><h2>記帳</h2><div class="muted" style="font-size:.85rem">匯率 1 NZD ＝ ${rate} TWD（可在下方修改）</div></div>
+  <div class="totals"><div class="tot"><div class="label">總花費</div><div class="v">NT$ ${fmt(total)}</div></div><div class="tot"><div class="label">約合紐幣</div><div class="v">NZ$ ${fmt(total/rate)}</div></div></div>
   <div class="sec"><h3>記一筆</h3><form class="add" id="addf">
-    <div class="field"><label for="f-amt">金額</label><div class="amt"><input id="f-amt" type="number" inputmode="decimal" step="1" min="0" placeholder="0" required><select id="f-cur"><option>KRW</option><option>TWD</option></select></div></div>
+    <div class="field"><label for="f-amt">金額</label><div class="amt"><input id="f-amt" type="number" inputmode="decimal" step="0.01" min="0" placeholder="0" required><select id="f-cur"><option>NZD</option><option>TWD</option></select></div></div>
     <div class="field"><label>類別</label><div class="cats" id="cats">${CATS.map(c=>`<button type="button" data-cat="${c}" aria-pressed="${c===S.cat}">${c}</button>`).join("")}</div></div>
-    <div class="row"><div class="field"><label for="f-date">哪一天</label><select id="f-date">${DAYS.map((x,i)=>`<option value="${x.k}"${x.k===defaultDay()?" selected":""}>${esc(dayLabel(i))}</option>`).join("")}<option value="pre">行前已付</option></select></div>
+    <div class="row"><div class="field"><label for="f-date">日期</label><select id="f-date">${DAYS.map(x=>`<option value="${x.d}"${x.d===defaultDate()?" selected":""}>${md(x.d)}（${x.w}）</option>`).join("")}<option value="pre">行前已付</option></select></div>
     <div class="field"><label for="f-payer">誰付的</label><select id="f-payer"><option>${esc(p1)}</option><option>${esc(p2)}</option></select></div></div>
-    <div class="field"><label for="f-note">備註</label><input id="f-note" type="text" maxlength="60" placeholder="例：龍平雪具租借"></div>
+    <div class="field"><label for="f-note">備註</label><input id="f-note" type="text" maxlength="60" placeholder="例：Fairlie 派兩個"></div>
     <button class="btn" type="submit">記下來</button>
   </form><div class="status">${modeNote}</div></div>`;
   if(byCat.length) h+=`<div class="sec"><h3>分類</h3>${byCat.map(([c,v])=>`<div class="catrow"><span>${c}</span><div class="bar"><i style="width:${(v/maxC*100).toFixed(1)}%"></i></div><span class="mono" style="text-align:right">${fmt(v)}</span></div>`).join("")}
-    <p style="margin:10px 0 0;font-size:.9rem">${esc(p1)} 付 NT$ ${fmt(paid1)}，${esc(p2)} 付 NT$ ${fmt(paid2)}。${Math.abs(diff)<1?"兩邊剛好平分。":`平分的話，${esc(diff>0?p2:p1)} 要給 ${esc(diff>0?p1:p2)} <b class="mono">NT$ ${fmt(Math.abs(diff))}</b>。`}</p></div>`;
+    <p style="margin:10px 0 0;font-size:.9rem">${esc(p1)} 付 NT$ ${fmt(paid1)}，${esc(p2)} 付 NT$ ${fmt(paid2)}。${Math.abs(diff)<1?"兩人剛好平分。":`平分的話，${esc(diff>0?p2:p1)} 要給 ${esc(diff>0?p1:p2)} <b class="mono">NT$ ${fmt(Math.abs(diff))}</b>。`}</p></div>`;
   h+=`<div class="sec"><h3>明細</h3>`;
   if(!ex.length) h+=`<p class="muted" style="margin:0">還沒有記錄。上面輸入金額、選類別，按「記下來」就會出現在這裡，也會顯示在當天的行程頁。</p>`;
   const groups={}; ex.forEach(e=>(groups[e.date]=groups[e.date]||[]).push(e));
   Object.keys(groups).sort().reverse().forEach(d=>{
-    const g=groups[d]; const sum=g.reduce((a,e)=>a+toTWD(e),0); const i=dayIdx(d);
-    h+=`<div class="daygroup"><h4><span>${i<0?"行前已付":esc(dayLabel(i))}</span><span class="mono">NT$ ${fmt(sum)}</span></h4>${g.map(e=>`<div class="entry"><div><b>${esc(e.cat)}</b> ${esc(e.note||"")}<br><small>${esc(e.payer)} 付</small></div><div class="amtv">${e.cur==="KRW"?"₩":"NT$"} ${(+e.amt).toLocaleString("en-US",{maximumFractionDigits:0})}${e.cur==="KRW"?`<br><small>≈ NT$ ${fmt(toTWD(e))}</small>`:""}</div><button class="del${S.armed===e.id?" armed":""}" data-del="${esc(e.id)}">${S.armed===e.id?"再按一次刪除":"刪除"}</button></div>`).join("")}</div>`;
+    const g=groups[d]; const sum=g.reduce((a,e)=>a+toTWD(e),0);
+    h+=`<div class="daygroup"><h4><span>${d==="pre"?"行前已付":md(d)}</span><span class="mono">NT$ ${fmt(sum)}</span></h4>${g.map(e=>`<div class="entry"><div><b>${esc(e.cat)}</b> ${esc(e.note||"")}<br><small>${esc(e.payer)} 付</small></div><div class="amtv">${e.cur==="NZD"?"NZ$":"NT$"} ${(+e.amt).toLocaleString("en-US",{maximumFractionDigits:2})}${e.cur==="NZD"?`<br><small>≈ NT$ ${fmt(toTWD(e))}</small>`:""}</div><button class="del${S.armed===e.id?" armed":""}" data-del="${esc(e.id)}">${S.armed===e.id?"再按一次刪除":"刪除"}</button></div>`).join("")}</div>`;
   });
   h+=`</div>
+  <div class="sec"><h3>預算參考（規劃時估算）</h3><dl class="kv">
+   <dt>機票</dt><dd>國泰報價 NT$42,455（每人或兩人待確認）</dd>
+   <dt>住宿</dt><dd>約 NT$57,000–59,000（兩人、13 晚）</dd>
+   <dt>租車</dt><dd>二驅 NZ$1,500–2,700（含全險、雪鍊），另計油錢</dd>
+   <dt>冰川健行</dt><dd>約 NZ$500–800 以上／人</dd>
+   <dt>米佛一日團</dt><dd>NZ$125–259／人</dd></dl></div>
   <div class="sec"><h3>設定</h3><div class="row">
    <div class="field"><label for="s-p1">付款人 1</label><input id="s-p1" value="${esc(p1)}" maxlength="12"></div>
    <div class="field"><label for="s-p2">付款人 2</label><input id="s-p2" value="${esc(p2)}" maxlength="12"></div></div>
-   <div class="row" style="margin-top:10px"><div class="field"><label for="s-rate">1 TWD ＝ ? KRW</label><input id="s-rate" type="number" step="0.1" min="1" value="${rate}"></div>
-   <div class="field" style="align-content:end"><button class="btn ghost" id="s-save" type="button">儲存設定</button></div></div></div>`;
+   <div class="row" style="margin-top:10px"><div class="field"><label for="s-rate">1 NZD ＝ ? TWD</label><input id="s-rate" type="number" step="0.01" min="1" value="${rate}"></div>
+   <div class="field" style="align-content:end"><button class="btn ghost" id="s-save" type="button">儲存設定</button></div></div></div><div class="sec"><h3>備份</h3><p class="muted" style="margin:0 0 10px;font-size:.88rem">匯出會下載一個 .json 檔，內含記帳、清單勾選與設定。換手機時在新手機按「匯入」選這個檔即可。</p><div class="row"><button class="btn ghost" id="bk-export" type="button">匯出備份</button><label class="btn ghost" for="bk-import" style="text-align:center">匯入備份</label></div><input id="bk-import" type="file" accept=".json,application/json" hidden></div>`;
   return h;
+}
+
+/* ---------- checklist ---------- */
+const ckey=(g,i)=>"c"+g+"_"+i;
+function countChecks(){let n=0,d=0;CHECKS.forEach((g,gi)=>g.items.forEach((_,i)=>{n++;if(S.checks[ckey(gi,i)])d++}));return {n,d}}
+function listHTML(){
+  const c=countChecks();
+  return `<div class="dayhead"><h2>行前清單</h2><div class="progress">已完成 ${c.d} / ${c.n}</div></div>`+
+   CHECKS.map((g,gi)=>`<div class="sec"><h3>${esc(g.g)}</h3>${g.items.map((it,i)=>{const k=ckey(gi,i),on=!!S.checks[k];return `<label class="check${on?" done":""}"><input type="checkbox" data-ck="${k}"${on?" checked":""}><span>${esc(it)}</span></label>`}).join("")}</div>`).join("");
 }
 
 /* ---------- render ---------- */
 function render(){
   document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===S.tab));
-  if(S.tab==="days"&&!S.day) S.day=(tripDay()||DAYS[0]).k;
+  if(S.tab==="days"&&!S.day) S.day=(tripDay()||DAYS[1]).d;
   renderStrip();
   const v=$("#view");
-  v.innerHTML = S.tab==="today"?todayHTML(): S.tab==="days"?dayHTML(DAYS.find(x=>x.k===S.day)||DAYS[0]): S.tab==="places"?placesHTML(): S.tab==="money"?moneyHTML(): prepHTML();
+  v.innerHTML = S.tab==="today"?todayHTML(): S.tab==="days"?dayHTML(DAYS.find(x=>x.d===S.day)||DAYS[0]): S.tab==="notes"?notesHTML(): S.tab==="money"?moneyHTML(): listHTML();
   v.classList.remove("view"); void v.offsetWidth; v.classList.add("view");
 }
 
@@ -443,8 +504,8 @@ async function connect(){
     S.expenses=snap.docs.map(d=>Object.assign({id:d.id},d.data())); saveLocal();
     if(S.tab==="money"||S.tab==="days"||S.tab==="today") softRender();
   },()=>{S.mode="local";softRender()});
-  db.doc("settings/main").onSnapshot(s=>{ if(s.exists){S.settings=Object.assign({},S.settings,s.data());saveLocal(); softRender();}});
-  db.doc("checks/main").onSnapshot(s=>{ if(s.exists){S.checks=Object.assign({},s.data());saveLocal(); if(S.tab==="prep"||S.tab==="today") softRender();}});
+  db.doc("settings/main").onSnapshot(s=>{ if(s.exists){S.settings=Object.assign({},S.settings,s.data());saveLocal(); if(S.tab==="money") softRender();}});
+  db.doc("checks/main").onSnapshot(s=>{ if(s.exists){S.checks=Object.assign({},s.data());saveLocal(); if(S.tab==="list"||S.tab==="today") softRender();}});
   softRender();
 }
 /* re-render without wiping a half-typed expense */
@@ -472,13 +533,23 @@ document.addEventListener("click",ev=>{
   if(t.dataset.tab){S.tab=t.dataset.tab;S.armed=null;saveLocal();render();window.scrollTo(0,0);return}
   if(t.dataset.go){S.tab="days";S.day=t.dataset.go;saveLocal();render();window.scrollTo(0,0);return}
   if(t.dataset.tabgo){S.tab=t.dataset.tabgo;saveLocal();render();window.scrollTo(0,0);return}
-  if(t.dataset.area){S.area=t.dataset.area;render();return}
   if(t.dataset.cat){S.cat=t.dataset.cat;document.querySelectorAll("#cats button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.cat===S.cat));return}
   if(t.dataset.del){const id=t.dataset.del; if(S.armed===id){S.armed=null;delExpense(id)} else {S.armed=id;softRender();setTimeout(()=>{if(S.armed===id){S.armed=null;softRender()}},4000)} return}
-  if(t.id==="s-save"){const p1=$("#s-p1").value.trim()||"Wan",p2=$("#s-p2").value.trim()||"朋友",r=parseFloat($("#s-rate").value);
-    S.settings=Object.assign({},S.settings,{payers:[p1,p2],rate:r>0?r:43}); saveSettings(); render();toast("設定已儲存");return}
+  if(t.id==="s-save"){const p1=$("#s-p1").value.trim()||"Wan",p2=$("#s-p2").value.trim()||"旅伴",r=parseFloat($("#s-rate").value);
+    S.settings=Object.assign({},S.settings,{payers:[p1,p2],rate:r>0?r:19});saveSettings();render();toast("設定已儲存");return}
+});
+document.addEventListener("click",ev=>{
+  if(!ev.target.closest||!ev.target.closest("#bk-export")) return;
+  const blob=new Blob([JSON.stringify({app:"nz27-handbook",v:1,exported:new Date().toISOString(),expenses:S.expenses,settings:S.settings,checks:S.checks},null,2)],{type:"application/json"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="紐西蘭手冊備份-"+todayISO()+".json";document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);toast("已匯出備份");
 });
 document.addEventListener("change",ev=>{
+  if(ev.target.id==="bk-import"){const f=ev.target.files[0];if(!f)return;const r=new FileReader();
+    r.onload=()=>{try{const o=JSON.parse(r.result);if(o.app!=="nz27-handbook")throw 0;
+      const ids=new Set(S.expenses.map(e=>e.id));(o.expenses||[]).forEach(e=>{if(!ids.has(e.id))S.expenses.push(e)});
+      if(o.settings)S.settings=Object.assign({},S.settings,o.settings);if(o.checks)S.checks=Object.assign({},S.checks,o.checks);
+      saveLocal();render();toast("已匯入，重複的記錄會略過")}catch(e){toast("這不是手冊的備份檔")}};r.readAsText(f);return}
   const k=ev.target.dataset&&ev.target.dataset.ck; if(!k) return;
   S.checks=Object.assign({},S.checks,{[k]:ev.target.checked}); if(!ev.target.checked) delete S.checks[k];
   ev.target.closest(".check").classList.toggle("done",ev.target.checked);
@@ -491,13 +562,12 @@ document.addEventListener("submit",async ev=>{
   const e={amt,cur:$("#f-cur").value,cat:S.cat,date:$("#f-date").value,payer:$("#f-payer").value,note:$("#f-note").value.trim(),ts:new Date().toISOString()};
   const btn=ev.target.querySelector("button[type=submit]"); btn.disabled=true;
   const ok=await addExpense(e); btn.disabled=false;
-  if(ok){ toast(`已記下 ${e.cur==="KRW"?"₩":"NT$"} ${amt.toLocaleString("en-US")}`); if(!db) render(); else { $("#f-amt").value=""; $("#f-note").value=""; } }
+  if(ok){ toast(`已記下 ${e.cur==="NZD"?"NZ$":"NT$"} ${amt}`); if(!db) render(); else { $("#f-amt").value=""; $("#f-note").value=""; } }
 });
 
 loadLocal();
-if(tripDay()&&S.tab!=="money"&&S.tab!=="prep") S.tab="today";
+if(tripDay()&&S.tab!=="money"&&S.tab!=="list") S.tab="today";
 render();
 connect();
 </script>
-</body>
-</html>
+</body></html>
