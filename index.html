@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#F6F4F0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="首爾濟州">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>首爾濟州 9 日遊</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: phone-first single column, sticky day strip, fixed bottom tab bar; Jeju palette: tangerine accent on basalt ink, sea-teal secondary */
+:root{
+  --bg:#F6F4F0; --card:#FFFFFF; --ink:#26221F; --muted:#6E655E; --line:#E6DFD6;
+  --accent:#E06A12; --accent-soft:#FCE7D4; --sea:#0F7C86; --sea-soft:#D7EEEF;
+  --amber:#9A5B00; --amber-soft:#FBEFD2; --red:#B3362B; --red-soft:#F8DEDA; --green:#2D7A45;
+  --f-display:"LXGW WenKai TC","Noto Serif TC",serif;
+  --f-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --tabh:62px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1A1715; --card:#24201D; --ink:#EEE8E2; --muted:#AA9F95; --line:#38312C;
+  --accent:#FF9447; --accent-soft:#45291A; --sea:#5CC7CF; --sea-soft:#173538;
+  --amber:#E8B04A; --amber-soft:#3A2D16; --red:#F08A7E; --red-soft:#3D1F1C; --green:#6CC48A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A1715; --card:#24201D; --ink:#EEE8E2; --muted:#AA9F95; --line:#38312C;
+  --accent:#FF9447; --accent-soft:#45291A; --sea:#5CC7CF; --sea-soft:#173538;
+  --amber:#E8B04A; --amber-soft:#3A2D16; --red:#F08A7E; --red-soft:#3D1F1C; --green:#6CC48A; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-bottom:calc(var(--tabh) + 24px + env(safe-area-inset-bottom,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+main{max-width:640px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;font-weight:700;line-height:1.25}
+h2{font-size:1.45rem}
+h3{font-size:1.05rem}
+a{color:var(--sea)}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.label{font-size:.72rem;letter-spacing:.08em;color:var(--muted);font-weight:700}
+
+.mast{padding-block:18px 8px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.mast h1{font-size:1.6rem}
+.mast h1 i{font-style:normal;color:var(--accent)}
+.mast .sub{font-size:.82rem;color:var(--muted)}
+
+.strip{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);
+  margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding:8px max(16px,env(safe-area-inset-left,0px));
+  display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.strip::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:4px 9px;text-align:center;min-width:52px}
+.chip b{display:block;font-family:var(--f-mono);font-size:.9rem}
+.chip span{font-size:.7rem;color:var(--muted)}
+.chip[aria-current="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip[aria-current="true"] span{color:inherit;opacity:.9}
+.chip.today{box-shadow:inset 0 -3px 0 var(--sea)}
+
+.dayhead{padding-block:18px 10px;display:grid;gap:4px}
+.dayhead .date{font-family:var(--f-mono);color:var(--accent);font-size:.9rem}
+.meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pill{display:inline-flex;align-items:center;gap:4px;font-size:.78rem;padding:2px 9px;border-radius:999px;background:var(--sea-soft);color:var(--ink)}
+.pill.warn{background:var(--amber-soft)}
+.pill.red{background:var(--red-soft)}
+.pill.must{background:var(--accent-soft)}
+.sec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px}
+.sec>h3{margin-bottom:8px}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.timeline li{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:baseline}
+.timeline .t{font-family:var(--f-mono);font-size:.85rem;color:var(--accent)}
+.timeline li>div{min-width:0}
+.must-mark{color:var(--accent);font-weight:700}
+ul.plain{margin:0;padding-left:1.15em;display:grid;gap:4px}
+.callout{border-radius:12px;padding:12px 14px;margin-top:12px;background:var(--amber-soft)}
+.callout.red{background:var(--red-soft)}
+.callout.info{background:var(--sea-soft)}
+.callout h3{font-size:.98rem;margin-bottom:4px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.9rem}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;min-width:0}
+.tablewrap{overflow-x:auto;margin-inline:-4px}
+table{border-collapse:collapse;width:100%;font-size:.86rem}
+th,td{text-align:left;padding:6px 4px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;color:var(--muted);font-size:.75rem;white-space:nowrap}
+
+.count{padding-block:22px 6px}
+.count .big{font-family:var(--f-display);font-size:3.2rem;line-height:1;color:var(--accent)}
+.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--accent);color:#fff;font-weight:700}
+.btn.ghost{background:var(--accent-soft);color:var(--ink)}
+.btn.small{padding:6px 10px;font-size:.85rem}
+
+/* places */
+.place{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}
+.place:last-child{border-bottom:0}
+.place>div{min-width:0}
+.place .ko{font-size:.8rem;color:var(--muted)}
+.place .note{font-size:.84rem;margin-top:2px}
+.place .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:4px}
+.maplink{font-size:.8rem;white-space:nowrap;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:4px 8px;background:var(--bg)}
+.filters{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-top:4px}
+.filters button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 11px;font-size:.85rem}
+.filters button[aria-pressed="true"]{background:var(--sea);border-color:var(--sea);color:#fff}
+
+/* ledger */
+.totals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.tot{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+.tot .v{font-family:var(--f-mono);font-size:1.35rem}
+form.add{display:grid;gap:10px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.row>*{min-width:0}
+.field{display:grid;gap:3px}
+.field label{font-size:.75rem;color:var(--muted);font-weight:700}
+input,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 10px;background:var(--bg)}
+.amt{display:grid;grid-template-columns:1fr 84px;gap:6px}
+.cats{display:flex;flex-wrap:wrap;gap:6px}
+.cats button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:4px 11px;font-size:.85rem}
+.cats button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.bar{height:8px;border-radius:4px;background:var(--accent-soft);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.catrow{display:grid;grid-template-columns:72px 1fr 92px;gap:10px;align-items:center;font-size:.88rem;padding:3px 0}
+.entry{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:9px 0;border-bottom:1px solid var(--line)}
+.entry:last-child{border-bottom:0}
+.entry .amtv{font-family:var(--f-mono);text-align:right}
+.entry small{color:var(--muted)}
+.entry .del{grid-column:2;justify-self:end;border:0;background:none;color:var(--muted);font-size:.78rem;padding:2px 0}
+.entry .del.armed{color:var(--red);font-weight:700}
+.daygroup h4{margin:14px 0 2px;font-size:.82rem;color:var(--muted);display:flex;justify-content:space-between}
+.status{font-size:.78rem;color:var(--muted);margin-top:8px}
+
+.check{display:grid;grid-template-columns:26px 1fr;gap:8px;align-items:start;padding:7px 0;border-bottom:1px solid var(--line)}
+.check:last-child{border-bottom:0}
+.check input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent)}
+.check.done span{color:var(--muted);text-decoration:line-through}
+.progress{font-family:var(--f-mono);font-size:.85rem;color:var(--muted)}
+
+nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(5,1fr);
+  padding:0 max(8px,env(safe-area-inset-right,0px)) env(safe-area-inset-bottom,0px) max(8px,env(safe-area-inset-left,0px))}
+nav.tabs button{border:0;background:none;height:var(--tabh);display:grid;place-items:center;align-content:center;gap:2px;font-size:.72rem;color:var(--muted)}
+nav.tabs svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+nav.tabs button[aria-selected="true"]{color:var(--accent);font-weight:700}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--tabh) + 14px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:10px;font-size:.88rem;z-index:30}
+@media (prefers-reduced-motion:no-preference){.view{animation:fade .18s ease-out}}
+@keyframes fade{from{opacity:.4}to{opacity:1}}
+</style>
+</head>
+<body>
+<main>
+  <header class="mast">
+    <div>
+      <h1>首爾＋濟州 <i>9</i> 日遊</h1>
+      <div class="sub" id="sub">2027／1／22 – 1／30 · 高雄 → 首爾 → 龍平 → 濟州 → 高雄</div>
+    </div>
+  </header>
+  <div class="strip" id="strip" hidden></div>
+  <section id="view" class="view"></section>
+</main>
+
+<nav class="tabs" role="tablist" id="tabs">
+  <button role="tab" data-tab="today"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 6c0-2 1.5-3 3-3M12 6c-1-1.5-3-2-4.5-1.5"/></svg>今日</button>
+  <button role="tab" data-tab="days"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>行程</button>
+  <button role="tab" data-tab="places"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>地點</button>
+  <button role="tab" data-tab="money"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M16 15h2"/></svg>記帳</button>
+  <button role="tab" data-tab="prep"><svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"/></svg>準備</button>
+</nav>
+
+<script>
+/* ---------- trip data: Jeju plan from 濟州島八天七夜行程規劃.odt (latest version), Seoul/Yongpyong and bookings from Wan's confirmations ---------- */
+const DAYS = [
+ {d:"2027-01-22",w:"五",title:"出發：高雄 → 首爾金浦",stay:"Baro Ato 弘大 2 號店",area:"首爾",
+  items:[["15:55","台灣虎航 IT662 高雄 → 首爾金浦（19:45 抵達）"],["20:00","入境、領行李，搭機場鐵路或地鐵到弘大（約 30 分鐘），或搭計程車"],["21:00","Baro Ato 弘大 2 號店 Check-in（入住 15:00 起，晚到沒關係）"]],
+  warn:["Baro Ato 現場付 ₩240,000（兩晚，現金或刷卡）","入住前 7 天內取消或沒入住會收全額，1/15 起就不能免費取消","IT662 託運行李每人 20 公斤","飯店確認單上的航班寫成 IT622，實際是 IT662，晚上 9 點左右才到，可先用 LINE 或 Kakao（ID：baroato）告訴飯店"]},
+ {d:"2027-01-23",w:"六",title:"首爾市區購物",stay:"Baro Ato 弘大 2 號店",area:"首爾",
+  items:[["全天","首爾市區購物（要去哪幾區還沒排）"]],
+  warn:["第二組朋友這天到，之後的行程大家一起"]},
+ {d:"2027-01-24",w:"日",title:"首爾 → 龍平滑雪場",stay:"龍飯店（Dragon Valley Hotel）",area:"龍平",
+  items:[["11:00","Baro Ato 退房"],["中午","搭龍平接駁巴士到龍平（班次、上車地點待確認）"],["下午","入住龍飯店，滑雪或玩雪"]],
+  warn:["接駁巴士要先預約，挑離弘大最近的上車站","雪具、雪衣租借還沒訂"]},
+ {d:"2027-01-25",w:"一",title:"龍平 → 金浦 → 飛濟州",stay:"Ventimo Hotel & Residence Jeju",area:"龍平→濟州",
+  items:[["上午","龍平滑雪或玩雪"],["中午","退房，搭龍平接駁巴士回首爾，再轉往金浦機場"],["18:30","金浦機場國內線 D 航廈報到"],["20:20","大韓航空 KE1227 金浦 → 濟州（21:35 抵達）"],["22:00","搭計程車到 Ventimo 入住"]],
+  warn:["接駁巴士回首爾後還要轉車到金浦，挑早一點的班次，避免趕不上 20:20 的班機","KE1227 託運行李每人 20 公斤，要帶護照正本（截圖或影本不能登機）"]},
+ {d:"2027-01-26",draft:true,w:"二",title:"1100 高地玩雪，山茶花之丘",stay:"待訂（原本排西歸浦）",area:"濟州・漢拏山",
+  items:[["上午","Ventimo 退房、取租車，開往 1100 高地：白鹿雕像拍照、木棧道 10–15 分鐘、路邊玩雪"],["午餐","山房山炭火帶魚（整條長帶魚料理）"],["下午","山茶花之丘 Camellia Hill：冬天山茶花最美",true],["傍晚","Osulloc 綠茶博物館：綠茶霜淇淋，買抹醬和茶包禮盒"]],
+  warn:["出發前看漢拏山國立公園官網的 1100 高地 CCTV，確認有雪、道路沒管制","路面會結冰，小孩穿防滑鞋，大人可買簡易冰爪","雪球夾可在大創或超市買；帶保溫瓶裝熱水"],
+  plan:["沒雪或封路：上午改去 Osulloc，下午山茶花之丘慢慢逛"]},
+ {d:"2027-01-27",draft:true,w:"三",title:"正房瀑布，市場與超市大採購",stay:"城山一帶（待訂，方便隔天搭船）",area:"濟州・西歸浦",
+  items:[["上午","正房瀑布：直接落入大海的瀑布",true],["午餐","可選：大浪味海鮮盆或海鮮拉麵"],["下午","西歸浦每日偶來市場：橘子糖、乾貨、小吃"],["傍晚","西歸浦 E-Mart：泡麵、零食、海苔，大包裝一次買齊"],["晚上","開往城山入住，順便把伴手禮裝箱"]]},
+ {d:"2027-01-28",draft:true,w:"四",title:"牛島一日遊",stay:"待訂（城山 或 濟州市區）",area:"濟州・牛島",
+  items:[["早上","城山港搭船到牛島（約 15 分鐘）",true],["島上","租三輪或微型電動車環島：西濱白沙、後海石壁、牛島燈塔"],["午餐","Haha Hoho 花生漢堡 或 漢拏山炒飯"],["點心","牛島花生冰淇淋"],["傍晚","回本島，城山日出峰周邊看海"]],
+  warn:["船班大約傍晚 5 點多就停駛，留意回程時間","風浪大會停航，前一晚和當天早上確認","一般租車不能開上牛島，車停城山港","搭船要填乘船申告書，帶護照"],
+  plan:["停航：改去城山日出峰、涉地可支，牛島看隔天能不能補"]},
+ {d:"2027-01-29",draft:true,w:"五",title:"史努比花園、水族館、告別烤肉",stay:"Ventimo Hotel & Residence Jeju",area:"濟州・東部",
+  items:[["上午","史努比花園：買濟州限定周邊，結帳多留半小時",true],["午餐","園區內 Snoopy Cafe"],["下午","Aqua Planet 水族館：大水槽、海獅表演",true],["傍晚","開回濟州市區，入住 Ventimo"],["晚餐","告別烤肉：熟成到 或 88 烤肉"],["晚上","體力夠就去東門市場補貨，回飯店整理行李"]],
+  warn:["熟成到很熱門：用 CatchTable 候位，或早點去拿號碼牌","烤肉味重，衣服用塑膠袋封好再裝箱","回程虎航 Wan 有 35 公斤、Nien-Tzu 20 公斤，伴手禮照這個分配"]},
+ {d:"2027-01-30",w:"六",title:"濟州 → 高雄",stay:"到家",area:"濟州",
+  items:[["08:00","Ventimo 退房、還車（加滿油）"],["09:00","到濟州機場報到，辦理退稅、免稅店取貨"],["11:15","台灣虎航 IT675 濟州 → 高雄（12:35 抵達）"]],
+  warn:["這天不排逛街，伴手禮前幾天就要買齊"]}
+];
+
+/* bookings shown on the prep tab; money in its own currency */
+const BOOKINGS = [
+ {d:"2027-01-22",kind:"機票",title:"台灣虎航 IT662 高雄 → 金浦",when:"1/22（五）15:55 → 19:45",ref:"F3CZUI",note:"Wan、Nien-Tzu；行李各 20 kg；座位 1F、1E"},
+ {d:"2027-01-22",kind:"住宿",title:"Baro Ato 弘大 2 號店",when:"1/22 – 1/24（2 晚）",ref:"",note:"雙人房；現場付 ₩240,000（現金或刷卡）；入住前 7 天內取消收全額；入住 15:00、退房 11:00；首爾市麻浦區東橋路 25 街 26-14；電話 +82 2-336-2614"},
+ {d:"2027-01-24",kind:"交通",title:"龍平接駁巴士",when:"1/24 首爾 → 龍平、1/25 龍平 → 首爾",ref:"",note:"還沒訂",todo:true},
+ {d:"2027-01-24",kind:"住宿",title:"龍飯店（Dragon Valley Hotel）",when:"1/24（1 晚）",ref:"",note:"已訂好"},
+ {d:"2027-01-25",kind:"機票",title:"大韓航空 KE1227 金浦 → 濟州",when:"1/25（一）20:20 → 21:35",ref:"E4EB72",note:"Wan、Nien-Tzu 同一筆訂位；行李各 20 kg；金浦國內線 D 航廈"},
+ {d:"2027-01-25",kind:"住宿",title:"Ventimo Hotel & Residence Jeju",when:"1/25 – 1/26（1 晚）",ref:"",note:"TWD 2,188，已確認"},
+ {d:"2027-01-26",kind:"租車",title:"濟州租車",when:"1/26 取車 – 1/30 還車",ref:"",note:"還沒訂；記得加兒童座椅",todo:true},
+ {d:"2027-01-26",kind:"住宿",title:"1/26 – 1/28 三晚",when:"西歸浦 1 晚、城山 1 晚、1/28 待定",ref:"",note:"還沒訂",todo:true},
+ {d:"2027-01-29",kind:"住宿",title:"Ventimo Hotel & Residence Jeju",when:"1/29 – 1/30（1 晚）",ref:"",note:"TWD 1,967，已確認"},
+ {d:"2027-01-30",kind:"機票",title:"台灣虎航 IT675 濟州 → 高雄",when:"1/30（六）11:15 → 12:35",ref:"R6DRKP",note:"Wan 行李 35 kg、Nien-Tzu 20 kg；座位 1F、1E；₩563,200"}
+];
+
+/* places: ko is the Korean (or English) name used for the Naver Map search */
+const PLACES = [
+ ["首爾・龍平","金浦機場","김포국제공항","2027-01-22 2027-01-25","1/22 抵達；1/25 國內線 D 航廈飛濟州",0],
+ ["首爾・龍平","Baro Ato 弘大 2 號店","서울 마포구 동교로25길 26-14","2027-01-22 2027-01-23","1/22–1/24 住宿",0],
+ ["首爾・龍平","龍平滑雪場","용평리조트","2027-01-24 2027-01-25","滑雪",0],
+ ["首爾・龍平","龍飯店 Dragon Valley Hotel","드래곤밸리호텔","2027-01-24","1/24 住宿",0],
+ ["濟州市","濟州國際機場","제주국제공항","2027-01-25 2027-01-30","1/25 晚上抵達、1/30 回程",0],
+ ["濟州市","Ventimo Hotel & Residence Jeju","Ventimo Hotel Jeju","2027-01-25 2027-01-29","1/25、1/29 住宿",0],
+ ["濟州市","黑豬肉一條街（豚香氣）","제주 흑돼지거리","","候選（原規劃的第一晚晚餐）",0],
+ ["濟州市","東門市場","동문재래시장","2027-01-29","夜市、伴手禮最便宜",0],
+ ["濟州市","七星路步行街","칠성로 쇼핑거리","","候選：Olive Young、服飾、球鞋",0],
+ ["濟州市","熟成到","숙성도","2027-01-29","告別烤肉首選，要候位",0],
+ ["濟州市","88 烤肉","","2027-01-29","熟成到的備案，蓮洞商圈",0],
+ ["涯月・西部","Arte Museum 濟州","아르떼뮤지엄 제주","","候選：室內光影展",0],
+ ["涯月・西部","ASSISI 涯月香氛","애월아시시","","候選：濟州限定香水，週四公休",0],
+ ["涯月・西部","Saebyeol 羊駝牧場","Saebyeol Alpaca","","候選：餵羊駝（地圖名稱待確認）",0],
+ ["漢拏山・西南","1100 高地","1100고지 휴게소","2027-01-26","開車直達玩雪",0],
+ ["漢拏山・西南","山房山炭火帶魚","","2027-01-26","午餐（店名待確認）",0],
+ ["漢拏山・西南","山茶花之丘","카멜리아힐","2027-01-26","冬天山茶花",1],
+ ["漢拏山・西南","Osulloc 綠茶博物館","오설록 티뮤지엄","2027-01-26","綠茶霜淇淋、茶包禮盒",0],
+ ["西歸浦","正房瀑布","정방폭포","2027-01-27","入海瀑布",1],
+ ["西歸浦","每日偶來市場","서귀포매일올레시장","2027-01-27","橘子糖、小吃",0],
+ ["西歸浦","E-Mart 西歸浦店","이마트 서귀포점","2027-01-27","零食泡麵大採購",0],
+ ["城山・東部","城山港","성산포항 종합여객터미널","2027-01-28","搭船去牛島",0],
+ ["城山・東部","牛島","우도","2027-01-28","電動車環島、花生冰淇淋",1],
+ ["城山・東部","西濱白沙","서빈백사","2027-01-28","牛島珊瑚沙灘",0],
+ ["城山・東部","城山日出峰","성산일출봉","2027-01-28","傍晚看海",0],
+ ["城山・東部","史努比花園","스누피가든","2027-01-29","限定周邊",1],
+ ["城山・東部","Aqua Planet 濟州","아쿠아플라넷 제주","2027-01-29","水族館、海獅表演",1]
+];
+
+const CHECKS = [
+ {g:"機票與入境",items:["護照效期 6 個月以上","確認韓國入境要準備什麼（K-ETA、電子入境卡），以官網為準","申請國際駕照，和台灣駕照正本一起帶","旅平險＋不便險（含班機延誤、牛島停航）"]},
+ {g:"住宿與交通",items:["預約龍平接駁巴士（1/24 去、1/25 回，回程要趕 20:20 班機）","雪具、雪衣租借","濟州租車（1/26 取車、1/30 還車），加兒童座椅","排好濟州 1/26–1/29 的行程","1/26–1/28 三晚住宿","1/14 前決定 Baro Ato 要不要保留（之後取消收全額）"]},
+ {g:"出發前一週確認營業",items:["Saebyeol 羊駝牧場、山茶花之丘、Osulloc","史努比花園、Aqua Planet","熟成到的候位方式（CatchTable）","1100 高地 CCTV 看有沒有雪","牛島船班時間","龍平滑雪場開放的雪道"]},
+ {g:"手機 App",items:["NAVER Map 或 Kakao Map（Google 地圖在韓國導航不準）","Kakao T（叫車）","Papago（翻譯，可拍照翻菜單）","CatchTable（餐廳候位）","韓國網卡或 eSIM"]},
+ {g:"冬季裝備",items:["毛帽、手套、圍巾、防風外套","滑雪用防水手套、護目鏡","防滑鞋或簡易冰爪","雪球夾（大創可買）","保溫瓶","塑膠袋（裝烤肉味衣服）","伴手禮照回程行李額度分配（Wan 35 kg、Nien-Tzu 20 kg）"]}
+];
+
+const CATS = ["住宿","交通油錢","餐飲","門票活動","超市","購物","其他"];
+DAYS.forEach(x=>x.k=x.d);
+
+/* ---------- state ---------- */
+const S = {tab:"today",day:null,expenses:[],settings:{rate:43,payers:["Wan","朋友"]},checks:{},
+  cat:"餐飲",mode:"local",armed:null,area:"全部"};
+const LS = "korea9-app";
+function loadLocal(){try{const o=JSON.parse(localStorage.getItem(LS)||"{}");
+  if(o.expenses)S.expenses=o.expenses; if(o.settings)S.settings=Object.assign(S.settings,o.settings);
+  if(o.checks)S.checks=o.checks; if(o.tab)S.tab=o.tab; if(o.day)S.day=o.day;}catch(e){}}
+function saveLocal(){try{localStorage.setItem(LS,JSON.stringify({expenses:S.expenses,settings:S.settings,checks:S.checks,tab:S.tab,day:S.day}))}catch(e){}}
+
+const $ = s=>document.querySelector(s);
+const esc = s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const iso = t=>t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0");
+const todayISO = ()=>iso(new Date());
+const dateOf = i=>DAYS[i].d;
+const md = d=>{if(!d) return ""; const [,m,dd]=d.split("-");return (+m)+"/"+(+dd)};
+const dayIdx = k=>DAYS.findIndex(x=>x.k===k);
+const tripDay = ()=>{const t=todayISO(); const i=DAYS.findIndex((_,j)=>dateOf(j)===t); return i<0?null:DAYS[i]};
+const dayLabel = i=>`Day ${i+1} · ${md(DAYS[i].d)}（${DAYS[i].w}）`;
+const naver = q=>"https://map.naver.com/p/search/"+encodeURIComponent(q);
+function toast(msg){const t=document.createElement("div");t.className="toast";t.textContent=msg;document.body.appendChild(t);setTimeout(()=>t.remove(),2200)}
+
+/* ---------- day view ---------- */
+function dayHTML(x){
+  const i=DAYS.indexOf(x);
+  let h=`<div class="dayhead"><div class="date">${esc(dayLabel(i))}</div><h2>${esc(x.title)}</h2>
+   <div class="meta"><span class="pill">住 ${esc(x.stay)}</span><span class="pill must">${esc(x.area)}</span></div></div>`;
+  h+=`<div class="sec"><h3>行程</h3><ul class="timeline">${x.items.map(([t,s,m])=>`<li><span class="t">${esc(t)}</span><div>${m?'<span class="must-mark">✓ 必去</span> ':""}${esc(s)}</div></li>`).join("")}</ul></div>`;
+  const bk=BOOKINGS.filter(b=>b.d===x.d);
+  if(bk.length) h+=`<div class="sec"><h3>今天的訂位</h3>${bk.map(bookingRow).join("")}</div>`;
+  if(x.draft) h+=`<div class="callout info"><h3>規劃中</h3>濟州只確定日期，這天先放半年前的初步安排，之後再調整。</div>`;
+  if(x.warn) h+=`<div class="callout"><h3>今天注意</h3><ul class="plain">${x.warn.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>`;
+  if(x.plan) h+=`<div class="callout info"><h3>備案</h3><ul class="plain">${x.plan.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></div>`;
+  const ps=PLACES.filter(p=>p[3].split(" ").includes(x.k)&&p[2]);
+  if(ps.length) h+=`<div class="sec"><h3>今天的地點</h3>${ps.map(placeRow).join("")}</div>`;
+  if(x.food) h+=`<div class="sec"><h3>吃什麼</h3><ul class="plain">${x.food.map(f=>`<li>${esc(f)}</li>`).join("")}</ul></div>`;
+  const spent=S.expenses.filter(e=>e.date===x.k);
+  if(spent.length){const t=spent.reduce((a,e)=>a+toTWD(e),0);h+=`<div class="sec"><h3>這天花了</h3><div class="mono">NT$ ${fmt(t)}　<span class="muted">${spent.length} 筆</span></div></div>`}
+  const nav=`<div style="display:flex;justify-content:space-between;margin-top:16px">${i>0?`<button class="btn ghost small" data-go="${DAYS[i-1].k}">‹ Day ${i}</button>`:"<span></span>"}${i<DAYS.length-1?`<button class="btn ghost small" data-go="${DAYS[i+1].k}">Day ${i+2} ›</button>`:""}</div>`;
+  return h+nav;
+}
+function renderStrip(){
+  const st=$("#strip"); st.hidden=S.tab!=="days";
+  if(st.hidden) return;
+  const t=todayISO();
+  st.innerHTML=DAYS.map((x,i)=>`<button class="chip${dateOf(i)===t?" today":""}" data-go="${x.k}" aria-current="${x.k===S.day}"><b>${md(x.d)}</b><span>${x.w}</span></button>`).join("");
+  const cur=st.querySelector('[aria-current="true"]'); if(cur) cur.scrollIntoView({inline:"center",block:"nearest"});
+}
+
+/* ---------- today ---------- */
+function todayHTML(){
+  const x=tripDay();
+  if(x) return `<div class="callout info" style="margin-top:14px"><b>旅途中</b>：今天是 Day ${DAYS.indexOf(x)+1}。出門前看一下天氣和營業時間。</div>`+dayHTML(x);
+  const t=todayISO(), start=DAYS[0].d;
+  const done=countChecks();
+  let h="";
+  if(t>DAYS[DAYS.length-1].d){
+    h+=`<div class="count"><div class="big">回來了</div><p class="muted">旅程結束。記帳頁還留著全部花費。</p></div>`;
+  } else {
+    const days=Math.ceil((new Date(start+"T00:00:00")-new Date(t+"T00:00:00"))/864e5);
+    h+=`<div class="count"><div class="label">距離出發</div><div class="big">${days} <span style="font-size:1.2rem">天</span></div>
+      <p class="muted" style="margin:6px 0 0">1/22（五）15:55 虎航 IT662 高雄出發。旅途中這頁會自動顯示當天行程。</p></div>`;
+  }
+  h+=`<div class="sec"><h3>9 天一覽</h3>${DAYS.map((d,i)=>`<div class="place" style="cursor:pointer" data-go="${d.k}"><div><b class="mono" style="color:var(--accent)">${md(d.d)}</b> <span class="muted">${d.w} · ${esc(d.area)}</span>　${esc(d.title)}<div class="ko">住 ${esc(d.stay)}</div></div><span class="muted">›</span></div>`).join("")}</div>
+    <div class="callout"><h3>還沒定案</h3><ul class="plain"><li>濟州 1/26–1/29 怎麼玩還在規劃，目前放的是半年前的初步安排</li><li>1/26–1/28 三晚住宿、濟州租車、龍平接駁巴士還沒訂</li><li>1/23 首爾要逛哪幾區</li><li>幾個餐廳和景點出發前要再確認營業</li></ul></div>
+    <div class="sec"><h3>行前清單</h3><p style="margin:0 0 10px" class="progress">已完成 ${done.d} / ${done.n}</p><button class="btn" data-tabgo="prep">打開清單</button></div>`;
+  return h;
+}
+
+/* ---------- places ---------- */
+function placeRow(p){
+  const [,name,ko,days,note,must]=p;
+  const tags=days.split(" ").filter(Boolean).map(k=>`<span class="pill">${md(k)}</span>`).join("")+(must?`<span class="pill must">必去</span>`:"");
+  return `<div class="place"><div><b>${esc(name)}</b>${ko?` <span class="ko">${esc(ko)}</span>`:""}<div class="note muted">${esc(note)}</div><div class="tags">${tags}</div></div>${ko?`<a class="maplink" href="${naver(ko)}" target="_blank" rel="noopener">Naver 地圖</a>`:""}</div>`;
+}
+function placesHTML(){
+  const areas=["全部",...new Set(PLACES.map(p=>p[0]))];
+  const list=S.area==="全部"?areas.slice(1):[S.area];
+  return `<div class="dayhead"><h2>地點</h2><div class="muted" style="font-size:.85rem">點「Naver 地圖」用韓文名稱搜尋，在韓國導航比 Google 準</div>
+    <div class="filters" id="filters">${areas.map(a=>`<button type="button" data-area="${esc(a)}" aria-pressed="${a===S.area}">${esc(a)}</button>`).join("")}</div></div>`+
+    list.map(a=>`<div class="sec"><h3>${esc(a)}</h3>${PLACES.filter(p=>p[0]===a).map(placeRow).join("")}</div>`).join("")+
+    `<div class="sec"><h3>已經排除的地方</h3><ul class="plain">
+     <li>Nexon 電腦博物館：整修更名中</li><li>Brick Campus 積木樂園：2024 年永久歇業</li><li>樹木園主題樂園（冰雕館）：暫停營業</li>
+     <li>Cafe the Container 橘子籃咖啡廳：為了留時間採買拿掉</li></ul></div>`;
+}
+
+/* ---------- bookings ---------- */
+function bookingRow(b){
+  return `<div class="place"><div><span class="pill${b.todo?" warn":""}">${esc(b.kind)}</span> <b>${esc(b.title)}</b><div class="ko">${esc(b.when)}</div><div class="note">${esc(b.note)}</div></div>${b.ref?`<span class="mono" style="font-size:.85rem">${esc(b.ref)}</span>`:""}</div>`;
+}
+
+/* ---------- prep ---------- */
+const ckey=(g,i)=>"c"+g+"_"+i;
+function countChecks(){let n=0,d=0;CHECKS.forEach((g,gi)=>g.items.forEach((_,i)=>{n++;if(S.checks[ckey(gi,i)])d++}));return {n,d}}
+function prepHTML(){
+  const c=countChecks();
+  return `<div class="dayhead"><h2>行前準備</h2><div class="progress">已完成 ${c.d} / ${c.n}</div></div>
+  <div class="sec"><h3>訂位一覽</h3>${BOOKINGS.map(bookingRow).join("")}<p class="muted" style="font-size:.8rem;margin:10px 0 0">右邊是訂位代號，報到時出示確認單畫面即可。</p></div>`+
+   CHECKS.map((g,gi)=>`<div class="sec"><h3>${esc(g.g)}</h3>${g.items.map((it,i)=>{const k=ckey(gi,i),on=!!S.checks[k];return `<label class="check${on?" done":""}"><input type="checkbox" data-ck="${k}"${on?" checked":""}><span>${esc(it)}</span></label>`}).join("")}</div>`).join("")+
+  `<div class="callout red"><h3>緊急電話</h3>警察 <b class="mono">112</b>　救護、消防 <b class="mono">119</b>　觀光翻譯熱線 <b class="mono">1330</b>（有中文）</div>
+  <div class="sec"><h3>交通</h3><ul class="plain">
+   <li>首爾用地鐵和 T-money 卡；濟州景點分散，租車自駕，開不了車的段落用 Kakao T 叫車</li>
+   <li>韓國靠右行駛，和台灣一樣</li>
+   <li>導航用 NAVER Map 或 Kakao Map，輸入韓文名稱或電話最準</li></ul></div>
+  <div class="sec"><h3>公休與營業</h3><ul class="plain">
+   <li>ASSISI 涯月香氛：每週四公休</li>
+   <li>羊駝牧場、山茶花之丘、史努比花園、Aqua Planet、Osulloc：規劃時查到全年無休，颱風或大雪可能臨時關閉</li>
+   <li>規劃時曾推薦到已歇業或整修中的地方，所以出發前一週再逐一確認</li></ul></div>
+  <div class="sec"><h3>伴手禮去哪買</h3><div class="tablewrap"><table><thead><tr><th>天</th><th>地點</th><th>買什麼</th></tr></thead><tbody>
+   <tr><td>1/26</td><td>Osulloc</td><td>綠茶抹醬、茶包禮盒</td></tr>
+   <tr><td>1/27</td><td>偶來市場、E-Mart</td><td>橘子糖、泡麵、零食、海苔</td></tr>
+   <tr><td>1/29</td><td>史努比花園</td><td>濟州限定史努比周邊</td></tr>
+   <tr><td>1/29</td><td>東門市場</td><td>橘子巧克力、柑橘乾、石頭爺爺小物</td></tr>
+   <tr><td>1/30</td><td>濟州機場</td><td>免稅店取貨、Paris Baguette 花生夾心餅乾</td></tr>
+  </tbody></table></div></div>`;
+}
+
+/* ---------- ledger ---------- */
+const toTWD = e=>e.cur==="TWD"?+e.amt:+e.amt/(+S.settings.rate||43);
+const fmt = n=>Math.round(n).toLocaleString("en-US");
+function defaultDay(){const x=tripDay();return x?x.k:DAYS[0].k}
+function moneyHTML(){
+  const ex=[...S.expenses].sort((a,b)=>(b.date+b.ts).localeCompare(a.date+a.ts));
+  const total=ex.reduce((a,e)=>a+toTWD(e),0), rate=+S.settings.rate||43;
+  const [p1,p2]=S.settings.payers;
+  const byCat=CATS.map(c=>[c,ex.filter(e=>e.cat===c).reduce((a,e)=>a+toTWD(e),0)]).filter(r=>r[1]>0);
+  const maxC=Math.max(1,...byCat.map(r=>r[1]));
+  const paid1=ex.filter(e=>e.payer===p1).reduce((a,e)=>a+toTWD(e),0), paid2=total-paid1;
+  const diff=(paid1-paid2)/2;
+  const modeNote={db:"已同步儲存，換手機或重新整理都還在。",local:window.claude?"目前只存在這支手機的瀏覽器裡（登入 claude.ai 開啟可同步）。":"記帳存在這個瀏覽器裡；換手機、換瀏覽器或清除瀏覽資料就看不到。",loading:"連線中…"}[S.mode];
+  let h=`<div class="dayhead"><h2>記帳</h2><div class="muted" style="font-size:.85rem">匯率 1 TWD ＝ ${rate} KRW（可在下方修改）</div></div>
+  <div class="totals"><div class="tot"><div class="label">總花費</div><div class="v">NT$ ${fmt(total)}</div></div><div class="tot"><div class="label">約合韓元</div><div class="v">₩ ${fmt(total*rate)}</div></div></div>
+  <div class="sec"><h3>記一筆</h3><form class="add" id="addf">
+    <div class="field"><label for="f-amt">金額</label><div class="amt"><input id="f-amt" type="number" inputmode="decimal" step="1" min="0" placeholder="0" required><select id="f-cur"><option>KRW</option><option>TWD</option></select></div></div>
+    <div class="field"><label>類別</label><div class="cats" id="cats">${CATS.map(c=>`<button type="button" data-cat="${c}" aria-pressed="${c===S.cat}">${c}</button>`).join("")}</div></div>
+    <div class="row"><div class="field"><label for="f-date">哪一天</label><select id="f-date">${DAYS.map((x,i)=>`<option value="${x.k}"${x.k===defaultDay()?" selected":""}>${esc(dayLabel(i))}</option>`).join("")}<option value="pre">行前已付</option></select></div>
+    <div class="field"><label for="f-payer">誰付的</label><select id="f-payer"><option>${esc(p1)}</option><option>${esc(p2)}</option></select></div></div>
+    <div class="field"><label for="f-note">備註</label><input id="f-note" type="text" maxlength="60" placeholder="例：龍平雪具租借"></div>
+    <button class="btn" type="submit">記下來</button>
+  </form><div class="status">${modeNote}</div></div>`;
+  if(byCat.length) h+=`<div class="sec"><h3>分類</h3>${byCat.map(([c,v])=>`<div class="catrow"><span>${c}</span><div class="bar"><i style="width:${(v/maxC*100).toFixed(1)}%"></i></div><span class="mono" style="text-align:right">${fmt(v)}</span></div>`).join("")}
+    <p style="margin:10px 0 0;font-size:.9rem">${esc(p1)} 付 NT$ ${fmt(paid1)}，${esc(p2)} 付 NT$ ${fmt(paid2)}。${Math.abs(diff)<1?"兩邊剛好平分。":`平分的話，${esc(diff>0?p2:p1)} 要給 ${esc(diff>0?p1:p2)} <b class="mono">NT$ ${fmt(Math.abs(diff))}</b>。`}</p></div>`;
+  h+=`<div class="sec"><h3>明細</h3>`;
+  if(!ex.length) h+=`<p class="muted" style="margin:0">還沒有記錄。上面輸入金額、選類別，按「記下來」就會出現在這裡，也會顯示在當天的行程頁。</p>`;
+  const groups={}; ex.forEach(e=>(groups[e.date]=groups[e.date]||[]).push(e));
+  Object.keys(groups).sort().reverse().forEach(d=>{
+    const g=groups[d]; const sum=g.reduce((a,e)=>a+toTWD(e),0); const i=dayIdx(d);
+    h+=`<div class="daygroup"><h4><span>${i<0?"行前已付":esc(dayLabel(i))}</span><span class="mono">NT$ ${fmt(sum)}</span></h4>${g.map(e=>`<div class="entry"><div><b>${esc(e.cat)}</b> ${esc(e.note||"")}<br><small>${esc(e.payer)} 付</small></div><div class="amtv">${e.cur==="KRW"?"₩":"NT$"} ${(+e.amt).toLocaleString("en-US",{maximumFractionDigits:0})}${e.cur==="KRW"?`<br><small>≈ NT$ ${fmt(toTWD(e))}</small>`:""}</div><button class="del${S.armed===e.id?" armed":""}" data-del="${esc(e.id)}">${S.armed===e.id?"再按一次刪除":"刪除"}</button></div>`).join("")}</div>`;
+  });
+  h+=`</div>
+  <div class="sec"><h3>設定</h3><div class="row">
+   <div class="field"><label for="s-p1">付款人 1</label><input id="s-p1" value="${esc(p1)}" maxlength="12"></div>
+   <div class="field"><label for="s-p2">付款人 2</label><input id="s-p2" value="${esc(p2)}" maxlength="12"></div></div>
+   <div class="row" style="margin-top:10px"><div class="field"><label for="s-rate">1 TWD ＝ ? KRW</label><input id="s-rate" type="number" step="0.1" min="1" value="${rate}"></div>
+   <div class="field" style="align-content:end"><button class="btn ghost" id="s-save" type="button">儲存設定</button></div></div></div>`;
+  return h;
+}
+
+/* ---------- render ---------- */
+function render(){
+  document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.tab===S.tab));
+  if(S.tab==="days"&&!S.day) S.day=(tripDay()||DAYS[0]).k;
+  renderStrip();
+  const v=$("#view");
+  v.innerHTML = S.tab==="today"?todayHTML(): S.tab==="days"?dayHTML(DAYS.find(x=>x.k===S.day)||DAYS[0]): S.tab==="places"?placesHTML(): S.tab==="money"?moneyHTML(): prepHTML();
+  v.classList.remove("view"); void v.offsetWidth; v.classList.add("view");
+}
+
+/* ---------- storage (db when available, browser otherwise) ---------- */
+let db=null;
+async function connect(){
+  if(!window.claude||!window.claude.use) return;
+  S.mode="loading"; if(S.tab==="money") render();
+  try{ db=await window.claude.use("db"); }catch(e){ db=null; }
+  if(!db){ S.mode="local"; if(S.tab==="money") render(); return; }
+  S.mode="db";
+  db.collection("expenses").onSnapshot(snap=>{
+    S.expenses=snap.docs.map(d=>Object.assign({id:d.id},d.data())); saveLocal();
+    if(S.tab==="money"||S.tab==="days"||S.tab==="today") softRender();
+  },()=>{S.mode="local";softRender()});
+  db.doc("settings/main").onSnapshot(s=>{ if(s.exists){S.settings=Object.assign({},S.settings,s.data());saveLocal(); softRender();}});
+  db.doc("checks/main").onSnapshot(s=>{ if(s.exists){S.checks=Object.assign({},s.data());saveLocal(); if(S.tab==="prep"||S.tab==="today") softRender();}});
+  softRender();
+}
+/* re-render without wiping a half-typed expense */
+function softRender(){
+  const a=$("#f-amt"),n=$("#f-note"),c=$("#f-cur"),d=$("#f-date"),p=$("#f-payer");
+  const keep=a?{a:a.value,n:n.value,c:c.value,d:d.value,p:p.value,f:document.activeElement&&document.activeElement.id}:null;
+  render();
+  if(keep&&$("#f-amt")){$("#f-amt").value=keep.a;$("#f-note").value=keep.n;$("#f-cur").value=keep.c;$("#f-date").value=keep.d;$("#f-payer").value=keep.p;if(keep.f&&$("#"+keep.f))$("#"+keep.f).focus()}
+}
+
+async function addExpense(e){
+  if(db){ try{ await db.collection("expenses").add(e); return true; }catch(err){ toast("沒存到，請確認網路後再按一次"); return false; } }
+  e.id="l"+Date.now(); S.expenses.push(e); saveLocal(); return true;
+}
+async function delExpense(id){
+  if(db&&!id.startsWith("l")){ try{ await db.doc("expenses/"+id).delete(); }catch(err){ toast("刪除失敗，請稍後再試"); } return; }
+  S.expenses=S.expenses.filter(x=>x.id!==id); saveLocal(); render();
+}
+async function saveChecks(){ saveLocal(); if(db){ try{ await db.doc("checks/main").set(S.checks); }catch(e){ toast("勾選沒同步，請確認網路"); } } }
+async function saveSettings(){ saveLocal(); if(db){ try{ await db.doc("settings/main").set(S.settings); }catch(e){ toast("設定沒同步，請確認網路"); } } }
+
+/* ---------- events ---------- */
+document.addEventListener("click",ev=>{
+  const t=ev.target.closest("button,[data-go]"); if(!t) return;
+  if(t.dataset.tab){S.tab=t.dataset.tab;S.armed=null;saveLocal();render();window.scrollTo(0,0);return}
+  if(t.dataset.go){S.tab="days";S.day=t.dataset.go;saveLocal();render();window.scrollTo(0,0);return}
+  if(t.dataset.tabgo){S.tab=t.dataset.tabgo;saveLocal();render();window.scrollTo(0,0);return}
+  if(t.dataset.area){S.area=t.dataset.area;render();return}
+  if(t.dataset.cat){S.cat=t.dataset.cat;document.querySelectorAll("#cats button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.cat===S.cat));return}
+  if(t.dataset.del){const id=t.dataset.del; if(S.armed===id){S.armed=null;delExpense(id)} else {S.armed=id;softRender();setTimeout(()=>{if(S.armed===id){S.armed=null;softRender()}},4000)} return}
+  if(t.id==="s-save"){const p1=$("#s-p1").value.trim()||"Wan",p2=$("#s-p2").value.trim()||"朋友",r=parseFloat($("#s-rate").value);
+    S.settings=Object.assign({},S.settings,{payers:[p1,p2],rate:r>0?r:43}); saveSettings(); render();toast("設定已儲存");return}
+});
+document.addEventListener("change",ev=>{
+  const k=ev.target.dataset&&ev.target.dataset.ck; if(!k) return;
+  S.checks=Object.assign({},S.checks,{[k]:ev.target.checked}); if(!ev.target.checked) delete S.checks[k];
+  ev.target.closest(".check").classList.toggle("done",ev.target.checked);
+  const c=countChecks(); const pr=document.querySelector(".progress"); if(pr) pr.textContent=`已完成 ${c.d} / ${c.n}`;
+  saveChecks();
+});
+document.addEventListener("submit",async ev=>{
+  if(ev.target.id!=="addf") return; ev.preventDefault();
+  const amt=parseFloat($("#f-amt").value); if(!(amt>0)){toast("請輸入金額");return}
+  const e={amt,cur:$("#f-cur").value,cat:S.cat,date:$("#f-date").value,payer:$("#f-payer").value,note:$("#f-note").value.trim(),ts:new Date().toISOString()};
+  const btn=ev.target.querySelector("button[type=submit]"); btn.disabled=true;
+  const ok=await addExpense(e); btn.disabled=false;
+  if(ok){ toast(`已記下 ${e.cur==="KRW"?"₩":"NT$"} ${amt.toLocaleString("en-US")}`); if(!db) render(); else { $("#f-amt").value=""; $("#f-note").value=""; } }
+});
+
+loadLocal();
+if(tripDay()&&S.tab!=="money"&&S.tab!=="prep") S.tab="today";
+render();
+connect();
+</script>
+</body>
+</html>
